@@ -68,10 +68,11 @@ let msg3 = "";
   }
 
 // test 7
-let inputValueOutOfRangeTest = "4";
 let msgOutOfRangeTest = "";
-function inputValueOutOfRangeTestFx(inputValueOutOfRangeTest){
-  switch(expression) {
+let inputValueOutOfRangeTest = "4"
+parseInt(inputValueOutOfRangeTest);
+(function inputValueOutOfRangeTestFx(inputValueOutOfRangeTest){
+  switch(inputValueOutOfRangeTest) {
     case 1:
       msgOutOfRangeTest = "Beep!"
       break;
@@ -83,6 +84,25 @@ function inputValueOutOfRangeTestFx(inputValueOutOfRangeTest){
       break;
     default:
       msgOutOfRangeTest = "Outside?"
-      return msg; 
+      return msgOutOfRangeTest; 
   }
-}
+})();
+
+
+// let inputArray = [1,2,3,4,5,6,7,8,9,0,1,2,5,6,7,8,]
+// const isValidCardNumber = isANumber(inputArray);
+// function isANumber(inputArray) {
+//   //if (inputNumber.length === 16 && typeOf(input) !== 'string'){
+//     // for(let i = -1; i <= inputNumber.length; i+= -1){
+//       if(inputArray.length === 16){
+//         console.log('input number = ', inputArray);
+//         console.log('inputnumber.length = ', inputArray.length);
+//         return true;
+//       // return inputNumber;
+//       } else {
+//         return false;
+//       }
+//     }
+//   console.log(isValidCardNumber);
+//PSEUDOCODE
+let userInput = doc.value
