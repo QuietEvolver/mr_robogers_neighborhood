@@ -1,3 +1,4 @@
+// test 1
 let input = "x"
 let inputValue; 
 function inputValue(input){
@@ -5,6 +6,7 @@ function inputValue(input){
   return input;
 }
 
+// test 2
 function inputValueNumber(inputValue){
   if (0 >= inputValue <= 9){
     console.log("This is a number: ", inputValue);
@@ -12,6 +14,7 @@ function inputValueNumber(inputValue){
   }
 }
 
+// test 3
 let inputValueNumber =  "0";
 parseInt(inputValueNumber);
 function inputValueNumberFx(inputValueNumber){
@@ -21,6 +24,7 @@ function inputValueNumberFx(inputValueNumber){
   }
 }
 
+// test 4
 let inputValueNumberBeep1 =  "1";
 let msg1 = "";
 function inputValueNumberBeepFx1(inputValueNumberBeep1){
@@ -32,6 +36,7 @@ function inputValueNumberBeepFx1(inputValueNumberBeep1){
   }
 }
 
+// test 5
 let inputValueNumberBoop2 =  "2";
 let msg2 = "";
 function inputValueNumberBoopFx2(inputValueNumberBoop2){
@@ -47,7 +52,7 @@ function inputValueNumberBoopFx2(inputValueNumberBoop2){
   }
 }
 
-
+// test 6
 let inputThree = parseInt("3");
 let msg3 = "";
 function inputValueThreeTestFx(inputThree){
@@ -63,3 +68,4 @@ function inputValueThreeTestFx(inputThree){
       break;
   }
 }
+
