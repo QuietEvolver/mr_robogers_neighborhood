@@ -33,7 +33,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 |--------|:------:|:-----:|
 | 1.  This test will take an input. | Input: x  |  Output: x |
 |--------|:------:|:-----:|
-| 2.  This test will take in number. | Input: 1 |  Output: 1 |
+| 2.  This test will take in number. | Input: 0 |  Output: 0 |
 |--------|:------:|:-----:|
 | 3.   This test will require a number only. | Input: 1 |  Output: 1 |
 |--------|:------:|:-----:|
@@ -41,9 +41,9 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 |--------|:------:|:-----:|
 | 5.  This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. | Input: 2 |  Output: Boop!|
 |--------|:------:|:-----:|
-| 6.  This test will identify numbers 1-3 and produce a specific message for number which 3appears first from the user input. | Input: 3 |  Output: Won't you be my neighbor?|
+| 6.  This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input. | Input: 3 |  Output: Won't you be my neighbor?|
 |--------|:------:|:-----:|
-| 7.  This test will  | Input:  |  Output: |
+| 7.  This test will identify a multiple numbers entry and produce a specific message for number which appears first from the user input. | Input: 321,803 |  Output: Won't you be my neighbor?|
 |--------|:------:|:-----:|
 | 8.  This test will  | Input:  |  Output: |
 |--------|:------:|:-----:|
