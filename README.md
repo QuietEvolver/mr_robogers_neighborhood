@@ -37,11 +37,11 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 |--------|:------:|:-----:|
 | 3.   This test will require a number only. | Input: 1 |  Output: 1 |
 |--------|:------:|:-----:|
-| 4.  This test will  | Input:  |  Output: |
+| 4.  This test will identify a given number and produce a message based on that number. | Input: 100 |  Output: Beep! |
 |--------|:------:|:-----:|
-| 5.  This test will  | Input:  |  Output: |
+| 5.  This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. | Input: 2 |  Output: Boop!|
 |--------|:------:|:-----:|
-| 6.  This test will  | Input:  |  Output: |
+| 6.  This test will identify numbers 1-3 and produce a specific message for number which 3appears first from the user input. | Input: 3 |  Output: Won't you be my neighbor?|
 |--------|:------:|:-----:|
 | 7.  This test will  | Input:  |  Output: |
 |--------|:------:|:-----:|
