@@ -55,7 +55,6 @@ function inputValueNumberBoopFx2(inputValueNumberBoop2){
 // test 6
 let inputThree = parseInt("3");
 let msg3 = "";
-function inputValueThreeTestFx(inputThree){
   switch(inputThree) {
     case 1:
       msg3 = "Beep!"
@@ -67,5 +66,23 @@ function inputValueThreeTestFx(inputThree){
       msg3 = "Won't you be my neighbor?"
       break;
   }
-}
 
+// test 7
+let inputValueOutOfRangeTest = "4";
+let msgOutOfRangeTest = "";
+function inputValueOutOfRangeTestFx(inputValueOutOfRangeTest){
+  switch(expression) {
+    case 1:
+      msgOutOfRangeTest = "Beep!"
+      break;
+    case 2:
+      msgOutOfRangeTest = "Boop!"
+      break;
+    case 3:
+      msgOutOfRangeTest = "Won't you be my neighbor?"
+      break;
+    default:
+      msgOutOfRangeTest = "Outside?"
+      return msg; 
+  }
+}
