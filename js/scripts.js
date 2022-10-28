@@ -90,21 +90,21 @@ parseInt(inputValueOutOfRangeTest);
 
 
 
-// let inputArray = [1,2,3,4,5,6,7,8,9,0,1,2,5,6,7,8,]
-// const isValidCardNumber = isANumber(inputArray);
-// function isANumber(inputArray) {
-//   //if (inputNumber.length === 16 && typeOf(input) !== 'string'){
-//     // for(let i = -1; i <= inputNumber.length; i+= -1){
-//       if(inputArray.length === 16){
-//         console.log('input number = ', inputArray);
-//         console.log('inputnumber.length = ', inputArray.length);
-//         return true;
-//       // return inputNumber;
-//       } else {
-//         return false;
-//       }
-//     }
-//   console.log(isValidCardNumber);
+let inputArray = [1,2,3,4,5,6,7,8,9,0,1,2,5,6,7,8,]
+const inputUINumber = isANumber(inputArray);
+function isANumber(inputArray) {
+  //if (inputNumber.length === 16 && typeOf(input) !== 'string'){
+    // for(let i = -1; i <= inputNumber.length; i+= -1){
+      if(inputArray.length === 16){
+        console.log('input number = ', inputArray);
+        console.log('inputnumber.length = ', inputArray.length);
+        return true;
+      // return inputNumber;
+      } else {
+        return false;
+      }
+    }
+  console.log(inputUINumber);
 
 //PSEUDOCODE
 // let userInput = doc.value
@@ -121,9 +121,19 @@ parseInt(inputValueOutOfRangeTest);
 // TBA: hierarchy 
 
 let input = "";
+input = "1"
 let message = "";
-function numberNeighborhoodMessage(input){
-    parseInt(input);
+let inputArray = parseInt(input);
+function numberNeighborhoodMessage(inputArray){
+
+  // const array1 = [1, 2, 3];
+  let msg = "";
+if (inputArray.includes(1)){
+	console.log(array1.includes(1));
+  	msg = "B11p";
+  	return msg;
+    };
+
     if (1 === input) {
       message = "Beep!"
       return message;
