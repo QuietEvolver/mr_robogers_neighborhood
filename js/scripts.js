@@ -46,3 +46,17 @@ function inputValueNumberBoopFx2(inputValueNumberBoop2){
     return msg2;
   }
 }
+
+let three = 3
+let msg3 = "";
+switch(three) {
+  case 1:
+    msg3 = "Beep!"
+    break;
+  case 2:
+    msg3 = "Boop!"
+    break;
+  case 3:
+    msg3 = "Won't you be my neighbor?"
+    break;
+}
