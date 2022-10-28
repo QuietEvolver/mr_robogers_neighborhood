@@ -67,7 +67,7 @@ let msg3 = "";
       break;
   }
 
-// test 7
+// test 9
 let msgOutOfRangeTest = "";
 let inputValueOutOfRangeTest = "4"
 parseInt(inputValueOutOfRangeTest);
@@ -106,6 +106,24 @@ function isANumber(inputArray) {
     }
   console.log(inputUINumber);
 
+  let inputArray = [1,2,3,4,5,6,7,8,0,1,2,5,6,7,8,]
+  const inputUINumber = isANumber(inputArray);
+  let msg = "";
+  function isANumber(inputArray) {
+      msg = "boop"
+    //if (inputNumber.length === 16 && typeOf(input) !== 'string'){
+      // for(let i = -1; i <= inputNumber.length; i+= -1){
+        if(inputArray.includes(9)){
+          console.log('input number = ', inputArray);
+          console.log('inputnumber.length = ', inputArray.length);
+          return true;
+        // return inputNumber;
+        } else {
+          return false;
+        }
+      }
+    console.log(inputUINumber);
+
 //PSEUDOCODE
 // let userInput = doc.value
 
@@ -125,16 +143,9 @@ input = "1"
 let message = "";
 let inputArray = parseInt(input);
 function numberNeighborhoodMessage(inputArray){
-
   // const array1 = [1, 2, 3];
-  let msg = "";
-if (inputArray.includes(1)){
-	console.log(array1.includes(1));
-  	msg = "B11p";
-  	return msg;
-    };
-
-    if (1 === input) {
+    if (inputArray.includes(1)){
+      console.log(array1.includes(1));
       message = "Beep!"
       return message;
     }
