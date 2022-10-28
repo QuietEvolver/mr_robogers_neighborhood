@@ -89,20 +89,35 @@ parseInt(inputValueOutOfRangeTest);
 })();
 
 
-// let inputArray = [1,2,3,4,5,6,7,8,9,0,1,2,5,6,7,8,]
-// const isValidCardNumber = isANumber(inputArray);
-// function isANumber(inputArray) {
-//   //if (inputNumber.length === 16 && typeOf(input) !== 'string'){
-//     // for(let i = -1; i <= inputNumber.length; i+= -1){
-//       if(inputArray.length === 16){
-//         console.log('input number = ', inputArray);
-//         console.log('inputnumber.length = ', inputArray.length);
-//         return true;
-//       // return inputNumber;
-//       } else {
-//         return false;
-//       }
-//     }
-//   console.log(isValidCardNumber);
+
 //PSEUDOCODE
-let userInput = doc.value
+// let userInput = doc.value
+
+// i get the input and parseInt
+// let intake = "";
+// let intakeStrToArr = Array.from(intake); // yields array form
+// intake.map
+
+// weigh hierarchy 1-3
+// output stmts
+
+let input = "";
+let message = "";
+function numberNeighborhoodMessage(input){
+    parseInt(input);
+    if (1 === input) {
+      message = "Beep!"
+      return message;
+    }
+    else if (2 === input){
+        console.log("Boop!: ", input);
+        message = "Boop!"
+      return message;
+    }
+    else if ( 3 === input){
+    message = "Won't you be my neighbor?"
+    return message;
+    } else {
+    message = "Outside?"
+  }
+} 
