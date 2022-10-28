@@ -29,6 +29,29 @@ For example, all digits of the number 2, 24, or 2099 would be replaced with "Boo
 * For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?"
 For example, all digits of the number 39, 3, or 8763 would be replaced with "Won't you be my neighbor?"
 
+| Test | Input | Output |
+|--------|:------:|:-----:|
+| 1.  This test will take an input. | Input: x  |  Output: x |
+|--------|:------:|:-----:|
+| 2.  This test will take in number. | Input: 1 |  Output: 1 |
+|--------|:------:|:-----:|
+| 3.   This test will require a number only. | Input: 1 |  Output: 1 |
+|--------|:------:|:-----:|
+| 4.  This test will  | Input:  |  Output: |
+|--------|:------:|:-----:|
+| 5.  This test will  | Input:  |  Output: |
+|--------|:------:|:-----:|
+| 6.  This test will  | Input:  |  Output: |
+|--------|:------:|:-----:|
+| 7.  This test will  | Input:  |  Output: |
+|--------|:------:|:-----:|
+| 8.  This test will  | Input:  |  Output: |
+|--------|:------:|:-----:|
+| 9.  This test will  | Input:  |  Output: |
+
+
+
+
 ## Setup/Installation Requirements
 
 * Clone this repo to your workspace.
