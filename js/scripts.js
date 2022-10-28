@@ -21,14 +21,28 @@ function inputValueNumberFx(inputValueNumber){
   }
 }
 
-let inputValueNumberBeep =  "1";
-let msg = "";
-parseInt(inputValueNumberBeep);
-function inputValueNumberBeepFx(inputValueNumberBeep){
-  if (1 === inputValueNumberBeep){
-    console.log("Beep!: ", inputValueNumberBeep);
-    msg = "Beep!"
-    return msg;
+let inputValueNumberBeep1 =  "1";
+let msg1 = "";
+function inputValueNumberBeepFx1(inputValueNumberBeep1){
+  parseInt(inputValueNumberBeep1);
+  if (1 === inputValueNumberBeep1){
+      console.log("Beep!: ", inputValueNumberBeep1);
+      msg1 = "Beep!"
+    return msg1;
   }
 }
 
+let inputValueNumberBoop2 =  "2";
+let msg2 = "";
+function inputValueNumberBoopFx2(inputValueNumberBoop2){
+  parseInt(inputValueNumberBoop2);
+  if (1 === inputValueNumberBoop2) {
+    msg2 = "Beep!"
+    return msg2;
+  }
+  else if (2 === inputValueNumberBoop2){
+      console.log("Boop!: ", inputValueNumberBoop2);
+      msg2 = "Boop!"
+    return msg2;
+  }
+}
