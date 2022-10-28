@@ -111,12 +111,11 @@ const inputUINumber = isANumber(inputArray);
 let msg = "";
 function isANumber(inputArray) {
       if(inputArray.includes(9)){
-          
-  console.log("t");
-        return true;
+      console.log("t");
+      return true;
       // return inputNumber;
       } else {
-  console.log("f");
+        console.log("f");
         return false;
       }
     }
