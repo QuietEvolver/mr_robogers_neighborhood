@@ -29,6 +29,8 @@ For example, all digits of the number 2, 24, or 2099 would be replaced with "Boo
 * For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?"
 For example, all digits of the number 39, 3, or 8763 would be replaced with "Won't you be my neighbor?"
 
+* These substitutions are written from least to most important. The first substitution should apply unless the second does, and the same with the second and third. In other words, the substitution for the number 1 should apply unless there's a 2 present in the number. Then, the substitution for the number 2 should apply unless there's a 3 present in the number.
+
 | Test | Input | Output |
 |--------|:------:|:-----:|
 | 1.  This test will take an input. | Input: x  |  Output: x |
