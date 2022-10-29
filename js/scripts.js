@@ -109,7 +109,6 @@ function isANumber(inputArray) {
 // Test 7
 let inputArray = [3,8,]
  let msg = "";
- const outputUImsg = isANumber(inputArray);
  function isANumber(inputArray) {
    if(inputArray.includes(3)){
       msg = "Won't you be my neighbor?";
@@ -127,12 +126,14 @@ let inputArray = [3,8,]
     // return inputNumber;
     } else {
         console.log("Outside", inputArray);
-      let msg = "msg =- out";
+      let msg = "Outside?";
         return msg;
     }
   }
+ const outputUIMsg = isANumber(inputArray);
+ outputUIMsg;
 
-  
+
 let inputArray = [1,2,3,4,5,6,7,8,9,0,1,2,5,6,7,8,]
 const inputUINumber = isANumber(inputArray);
 function isANumber(inputArray) {
