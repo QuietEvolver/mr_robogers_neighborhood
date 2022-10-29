@@ -85,53 +85,43 @@ parseInt(inputValueOutOfRangeTest);
 })();
 
 // test 8
-let inputArray = [1,8,3]
-const inputUINumber = isANumber(inputArray);
-let msg = "";
-function isANumber(inputArray) {
-  if(inputArray.includes(3)){
-     msg = "msg t-3";
-         console.log("t-3");
-    return msg;
-  // return inputNumber;
-  } else if (inputArray.includes(2)){
-      console.log("t-2");
+let inputArray8 = [1,8,3]
+const inputUINumber8 = isANumber8(inputArray8);
+let msg8 = "";
+function isANumber8(inputArray8) {
+  if(inputArray8.includes(3)){
+     msg8 = "msg8 t-3";
+    return msg8;
+  } else if (inputArray8.includes(2)){
     return true;
-  } else if(inputArray.includes(1)){
-        console.log("t-1");
+  } else if(inputArray8.includes(1)){
         return true;
-  // return inputNumber;
-  } else if (inputArray.includes(9)){
+  } else if (inputArray8.includes(9)){
     return false;
   }
 }
 
 // Test 7
-let inputArray = [3,8,]
- let msg = "";
- function isANumber(inputArray) {
-   if(inputArray.includes(3)){
-      msg = "Won't you be my neighbor?";
-          console.log("t-3");
-     return msg;
-   // return inputNumber;
-   } else if (inputArray.includes(2)){
-        console.log("t-2");
-       msg = "Boop!"
-      return msg;
-    } else if(inputArray.includes(1)){
-          console.log("t-1");
-       msg = "Beep!"
-          return msg;
-    // return inputNumber;
+let inputArray7 = [3,8,]
+ let msg7 = "";
+ function isANumber7(inputArray7) {
+   if(inputArray7.includes(3)){
+      msg7 = "Won't you be my neighbor?";
+      return msg7;
+   } else if (inputArray7.includes(2)){
+        msg7 = "Boop!";
+        return msg7;
+    } else if(inputArray7.includes(1)){
+        msg7 = "Beep!";
+        return msg7;  
     } else {
-        console.log("Outside", inputArray);
-      let msg = "Outside?";
-        return msg;
+        console.log("Outside", inputArray7);
+        let msg7 = "Outside?";
+        return msg7;
     }
   }
- const outputUIMsg = isANumber(inputArray);
- outputUIMsg;
+ const outputMsg = isANumber7(inputArray7);
+ outputMsg;
 
 //PSEUDOCODE
 // let userInput = doc.value
@@ -154,11 +144,11 @@ function isMyNeighborhoodMessage(inputArray) {
       msg = "Beep!"
         return msg;
   // return inputNumber;
-  } else {
+  } else if (!((inputArray===1)||(inputArray===2)||(inputArray===3))){
       console.log("Outside", inputArray);
     let msg = "Outside?";
       return msg;
   }
 }
-const outputUIMsg = isANumber(inputArray);
+const outputUIMsg = isMyNeighborhoodMessage(inputArray);
 outputUIMsg;
