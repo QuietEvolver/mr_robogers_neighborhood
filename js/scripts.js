@@ -133,87 +133,32 @@ let inputArray = [3,8,]
  const outputUIMsg = isANumber(inputArray);
  outputUIMsg;
 
-
-let inputArray = [1,2,3,4,5,6,7,8,9,0,1,2,5,6,7,8,]
-const inputUINumber = isANumber(inputArray);
-function isANumber(inputArray) {
-  //if (inputNumber.length === 16 && typeOf(input) !== 'string'){
-    // for(let i = -1; i <= inputNumber.length; i+= -1){
-      if(inputArray.length === 16){
-        console.log('input number = ', inputArray);
-        console.log('inputnumber.length = ', inputArray.length);
-        return true;
-      // return inputNumber;
-      } else {
-        return false;
-      }
-    }
-  console.log(inputUINumber);
-
-  let inputArray = [1,2,3,4,5,6,7,8,0,1,2,5,6,7,8,]
-  const inputUINumber = isANumber(inputArray);
-  let msg = "";
-  function isANumber(inputArray) {
-    if(inputArray.includes(1)){
-        console.log("t-1");
-      return true;
-    // return inputNumber;
-    } else if (inputArray.includes(2)){
-        console.log("t-2");
-      return true;
-    } else if(inputArray.includes(3)){
-          console.log("t-3");
-          return true;
-    // return inputNumber;
-    } else if (inputArray.includes(9)){
-      return false;
-    }
-  }
-
 //PSEUDOCODE
 // let userInput = doc.value
 
-// i get the input and parseInt
-// let intake = "";
-// let intakeStrToArr = Array.from(intake); // yields array form
-// intake.map
-
-// weigh hierarchy 1-3
-// output stmts
-
-
-// TBA: hierarchy 
-
-let input = "";
-input = "1"
-let message = "";
-let inputArray = parseInt(input);
-function numberNeighborhoodMessage(inputArray){
-  // const array1 = [1, 2, 3];
-    if (inputArray.includes(1)){
-      console.log(array1.includes(1));
-      message = "Beep!"
-      return message;
-    } else if (inputArray.includes(2)){
-      console.log("Boop!: ", input);
-      message = "Boop!"
-    return message;
-    }
-    else if ( inputArray.includes(3)){
-    message = "Won't you be my neighbor?"
-    return message;
-    } else {
-    message = "Outside?"
-  }
-} 
-
-// the test for mult  hierarchy dependent nums
-
-// if this number is 1 then boop
-// if this number is 1 <= 2 then boop 
-// if this number is 1 <= 2 then boop && if 2 <= currentNum:3
-// if number is not 1, 2, 3, then outside;
-
 let intake = "3,444";
-let intakeStrToArr = Array.from(intake);
-intakeStrToArr; 
+let inputArray = Array.from(intake);
+let msg = "";
+function isMyNeighborhoodMessage(inputArray) {
+  if(inputArray.includes(3)){
+    msg = "Won't you be my neighbor?";
+        console.log("t-3");
+    return msg;
+  // return inputNumber;
+  } else if (inputArray.includes(2)){
+      console.log("t-2");
+      msg = "Boop!"
+    return msg;
+  } else if(inputArray.includes(1)){
+        console.log("t-1");
+      msg = "Beep!"
+        return msg;
+  // return inputNumber;
+  } else {
+      console.log("Outside", inputArray);
+    let msg = "Outside?";
+      return msg;
+  }
+}
+const outputUIMsg = isANumber(inputArray);
+outputUIMsg;
