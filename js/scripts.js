@@ -106,19 +106,25 @@ function isANumber(inputArray) {
     }
   console.log(inputUINumber);
 
-let inputArray = [1,2,3,4,5,6,7,8,0,1,2,5,6,7,8,]
-const inputUINumber = isANumber(inputArray);
-let msg = "";
-function isANumber(inputArray) {
-      if(inputArray.includes(9)){
-      console.log("t");
+  let inputArray = [1,2,3,4,5,6,7,8,0,1,2,5,6,7,8,]
+  const inputUINumber = isANumber(inputArray);
+  let msg = "";
+  function isANumber(inputArray) {
+    if(inputArray.includes(1)){
+        console.log("t-1");
       return true;
-      // return inputNumber;
-      } else {
-        console.log("f");
-        return false;
-      }
+    // return inputNumber;
+    } else if (inputArray.includes(2)){
+        console.log("t-2");
+      return true;
+    } else if(inputArray.includes(3)){
+          console.log("t-3");
+          return true;
+    // return inputNumber;
+    } else if (inputArray.includes(9)){
+      return false;
     }
+  }
 
 //PSEUDOCODE
 // let userInput = doc.value
