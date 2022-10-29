@@ -144,11 +144,40 @@ function isMyNeighborhoodMessage(inputArray) {
       msg = "Beep!"
         return msg;
   // return inputNumber;
-  } else if (!((inputArray===1)||(inputArray===2)||(inputArray===3))){
+  } else if (!((inputArray===1)&&(inputArray===2)&&(inputArray===3))){
       console.log("Outside", inputArray);
     let msg = "Outside?";
       return msg;
   }
+}
+const outputUIMsg = isMyNeighborhoodMessage(inputArray);
+outputUIMsg;
+
+/// let intake = "3,444";
+// *not* to come first
+llet intake = "3,444";
+let inputArray = Array.from(intake);
+let msg = "";
+function isMyNeighborhoodMessage(inputArray) {
+  if (!((inputArray.includes(1))&&(inputArray.includes(2))&&(inputArray.includes(3)))){
+      console.log("CL: Outside", inputArray);
+    let msg = "Outside?";
+      return msg;
+  }else if(inputArray.includes(3)){
+    msg = "Won't you be my neighbor?";
+        console.log("t-3");
+    return msg;
+  // return inputNumber;
+  } else if (inputArray.includes(2)){
+      console.log("t-2");
+      msg = "Boop!"
+    return msg;
+  } else if(inputArray.includes(1)){
+        console.log("t-1");
+      msg = "Beep!"
+        return msg;
+  // return inputNumber;
+  } 
 }
 const outputUIMsg = isMyNeighborhoodMessage(inputArray);
 outputUIMsg;
