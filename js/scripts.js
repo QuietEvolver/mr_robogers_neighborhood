@@ -84,7 +84,27 @@ parseInt(inputValueOutOfRangeTest);
   }
 })();
 
-
+// test 8
+let inputArray = [1,8,3]
+const inputUINumber = isANumber(inputArray);
+let msg = "";
+function isANumber(inputArray) {
+  if(inputArray.includes(3)){
+     msg = "msg t-3";
+         console.log("t-3");
+    return msg;
+  // return inputNumber;
+  } else if (inputArray.includes(2)){
+      console.log("t-2");
+    return true;
+  } else if(inputArray.includes(1)){
+        console.log("t-1");
+        return true;
+  // return inputNumber;
+  } else if (inputArray.includes(9)){
+    return false;
+  }
+}
 
 let inputArray = [1,2,3,4,5,6,7,8,9,0,1,2,5,6,7,8,]
 const inputUINumber = isANumber(inputArray);
