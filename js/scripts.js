@@ -2,14 +2,12 @@
 let input = "x"
 let inputValue; 
 function inputValue(input){
-  console.log("input value: ", input);
   return input;
 }
 
 // test 2
 function inputValueNumber(inputValue){
   if (0 >= inputValue <= 9){
-    console.log("This is a number: ", inputValue);
     return inputValue;
   }
 }
@@ -19,7 +17,6 @@ let inputValueNumber =  "0";
 parseInt(inputValueNumber);
 function inputValueNumberFx(inputValueNumber){
   if (0 >= inputValueNumber <= 9){
-    console.log("This is a number: ", inputValueNumber);
     return inputValueNumber;
   }
 }
@@ -30,7 +27,6 @@ let msg1 = "";
 function inputValueNumberBeepFx1(inputValueNumberBeep1){
   parseInt(inputValueNumberBeep1);
   if (1 === inputValueNumberBeep1){
-      console.log("Beep!: ", inputValueNumberBeep1);
       msg1 = "Beep!"
     return msg1;
   }
@@ -150,13 +146,12 @@ function numberNeighborhoodMessage(inputArray){
       console.log(array1.includes(1));
       message = "Beep!"
       return message;
+    } else if (inputArray.includes(2)){
+      console.log("Boop!: ", input);
+      message = "Boop!"
+    return message;
     }
-    else if (2 === input){
-        console.log("Boop!: ", input);
-        message = "Boop!"
-      return message;
-    }
-    else if ( 3 === input){
+    else if ( inputArray.includes(3)){
     message = "Won't you be my neighbor?"
     return message;
     } else {
@@ -170,3 +165,7 @@ function numberNeighborhoodMessage(inputArray){
 // if this number is 1 <= 2 then boop 
 // if this number is 1 <= 2 then boop && if 2 <= currentNum:3
 // if number is not 1, 2, 3, then outside;
+
+let intake = "3,444";
+let intakeStrToArr = Array.from(intake);
+intakeStrToArr; 
