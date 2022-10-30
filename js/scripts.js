@@ -1,14 +1,14 @@
 // test 1
-let input = "x"
-let inputValue; 
-function inputValue(input){
-  return input;
+let input0 = "x"
+let inputValue0; 
+function inputValue(input0){
+  return input0;
 }
 
 // test 2
-function inputValueNumber(inputValue){
-  if (0 >= inputValue <= 9){
-    return inputValue;
+function inputValueNumber0(inputValue0){
+  if (0 >= inputValue0 <= 9){
+    return inputValue0;
   }
 }
 
@@ -88,9 +88,9 @@ parseInt(inputValueOutOfRangeTest);
 let inputArray8 = [1,8,3]
 const inputUINumber8 = isANumber8(inputArray8);
 let msg8 = "";
-function isANumber8(inputArray8) {
+function isANumber8(inputArray8, msg) {
   if(inputArray8.includes(3)){
-     msg8 = "msg8 t-3";
+    let msg8 = "msg8 t-3";
     return msg8;
   } else if (inputArray8.includes(2)){
     return true;
@@ -126,36 +126,35 @@ let inputArray7 = [3,8,]
 //PSEUDOCODE
 // let userInput = doc.value
 
-let intake = "3,444";
-let inputArray = Array.from(intake);
-let msg = "";
-function isMyNeighborhoodMessage(inputArray) {
-  if(inputArray.includes(3)){
-    msg = "Won't you be my neighbor?";
-        console.log("t-3");
-    return msg;
-  // return inputNumber;
-  } else if (inputArray.includes(2)){
-      console.log("t-2");
-      msg = "Boop!"
-    return msg;
-  } else if(inputArray.includes(1)){
-        console.log("t-1");
-      msg = "Beep!"
-        return msg;
-  // return inputNumber;
-  } else if (!((inputArray===1)&&(inputArray===2)&&(inputArray===3))){
-      console.log("Outside", inputArray);
-    let msg = "Outside?";
-      return msg;
-  }
-}
-const outputUIMsg = isMyNeighborhoodMessage(inputArray);
-outputUIMsg;
+// let intake = "3,444";
+// let inputArray = Array.from(intake);
+// let msg = "";
+// function isMyNeighborhoodMessage(inputArray) {
+//   if(inputArray.includes(3)){
+//     msg = "Won't you be my neighbor?";
+//         console.log("t-3");
+//     return msg;
+//   // return inputNumber;
+//   } else if (inputArray.includes(2)){
+//       console.log("t-2");
+//       msg = "Boop!"
+//     return msg;
+//   } else if(inputArray.includes(1)){
+//         console.log("t-1");
+//       msg = "Beep!"
+//         return msg;
+//   // return inputNumber;
+//   } else if (!((inputArray===1)&&(inputArray===2)&&(inputArray===3))){
+//       console.log("Outside", inputArray);
+//     let msg = "Outside?";
+//       return msg;
+//   }
+// }
+// const outputUIMsg = isMyNeighborhoodMessage(inputArray);
+// outputUIMsg;
 
-/// let intake = "3,444";
-// *not* to come first
 let intake = "3,444";
+// *not* to come first
 let inputArray = Array.from(intake);
 let msg = "";
 function isMyNeighborhoodMessage(inputArray) {
@@ -185,8 +184,9 @@ outputUIMsg;
 function handleFormSubmission(e){
   e.preventDefault();
     const intake = document.getElementById("input-value-1").value;
-    const output = document.getElementById("output").innerText = msg;
     console.log("intake: ", intake);
+    // const output = document.getElementById("output").innerText = msg;
+    // document.getElementById("output").removeAttribute("class", "hidden");
 }
 
 window.addEventListener("load", function(){
