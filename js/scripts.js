@@ -153,33 +153,35 @@ let inputArray7 = [3,8,]
 // const outputUIMsg = isMyNeighborhoodMessage(inputArray);
 // outputUIMsg;
 
-let intake = "3,444";
-// *not* to come first
-let inputArray = Array.from(intake);
-let msg = "";
-function isMyNeighborhoodMessage(inputArray) {
-  if (!((inputArray.includes(1))&&(inputArray.includes(2))&&(inputArray.includes(3)))){
-      console.log("CL: Outside", inputArray);
-    let msg = "Outside?";
-      return msg;
-  }else if(inputArray.includes(3)){
-    msg = "Won't you be my neighbor?";
-        console.log("t-3");
-    return msg;
-  // return inputNumber;
-  } else if (inputArray.includes(2)){
-      console.log("t-2");
-      msg = "Boop!"
-    return msg;
-  } else if(inputArray.includes(1)){
-        console.log("t-1");
-      msg = "Beep!"
-        return msg;
-  // return inputNumber;
-  } 
-}
-const outputUIMsg = isMyNeighborhoodMessage(inputArray);
-outputUIMsg;
+// let intake = "3,444";
+// // *not* to come first
+// let inputArray = Array.from(intake);
+// let msg = "";
+// function isMyNeighborhoodMessage(inputArray) {
+//       console.log("CLfx: inputArray", inputArray);
+//   if (!((inputArray.includes(1))&&(inputArray.includes(2))&&(inputArray.includes(3)))){
+//     let msg = "Outside?";
+//       return msg;
+//   }else if(inputArray.includes(3)){
+//     msg = "Won't you be my neighbor?";
+//         console.log("t-3");
+//     return msg;
+//   // return inputNumber;
+//   } else if (inputArray.includes(2)){
+//       console.log("t-2");
+//       msg = "Boop!"
+//     return msg;
+//   } else if(inputArray.includes(1)){
+//         console.log("t-1");
+//       msg = "Beep!"
+//         return msg;
+//   // return inputNumber;
+//   } 
+// }
+// // console.log(inputArray);
+// // const outputUIMsg = isMyNeighborhoodMessage(inputArray);
+// // outputUIMsg;
+// isMyNeighborhoodMessage();
 
 function handleFormSubmission(e){
   e.preventDefault();
@@ -187,6 +189,29 @@ function handleFormSubmission(e){
     console.log("intake: ", intake);
     // const output = document.getElementById("output").innerText = msg;
     // document.getElementById("output").removeAttribute("class", "hidden");
+    // let inputArray = Array.from(intake);
+
+    let msgOutOfRangeTest = "";
+     // let inputValueOutOfRangeTest = "4"
+     let inputValueOutOfRangeTest =  intake;
+    parseInt(inputValueOutOfRangeTest);
+    (function inputValueOutOfRangeTestFx(inputValueOutOfRangeTest){
+      switch(inputValueOutOfRangeTest) {
+        case 1:
+          msgOutOfRangeTest = "Beep!"
+          console.log(msgOutOfRangeTest);
+          break;
+        case 2:
+          msgOutOfRangeTest = "Boop!"
+          break;
+        case 3:
+          msgOutOfRangeTest = "Won't you be my neighbor?"
+          break;
+        default:
+          msgOutOfRangeTest = "Outside?"
+          return msgOutOfRangeTest; 
+      }
+    })();
 }
 
 window.addEventListener("load", function(){
