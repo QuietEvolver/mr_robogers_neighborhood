@@ -155,7 +155,7 @@ outputUIMsg;
 
 /// let intake = "3,444";
 // *not* to come first
-llet intake = "3,444";
+let intake = "3,444";
 let inputArray = Array.from(intake);
 let msg = "";
 function isMyNeighborhoodMessage(inputArray) {
@@ -181,3 +181,13 @@ function isMyNeighborhoodMessage(inputArray) {
 }
 const outputUIMsg = isMyNeighborhoodMessage(inputArray);
 outputUIMsg;
+
+function handleFormSubmission(e){
+  e.preventDefault();
+    const intake = document.getElementById("input-value-1").value;
+    console.log("intake: ", intake);
+}
+
+window.addEventListener("load", function(){
+  document.querySelector("form#intake-form").addEventListener("submit", handleFormSubmission);
+});
