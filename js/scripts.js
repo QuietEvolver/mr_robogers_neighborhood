@@ -185,6 +185,7 @@ outputUIMsg;
 function handleFormSubmission(e){
   e.preventDefault();
     const intake = document.getElementById("input-value-1").value;
+    const output = document.getElementById("output").innerText = msg;
     console.log("intake: ", intake);
 }
 
