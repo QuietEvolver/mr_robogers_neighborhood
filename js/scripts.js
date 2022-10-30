@@ -183,37 +183,59 @@ let inputArray7 = [3,8,]
 // // outputUIMsg;
 // isMyNeighborhoodMessage();
 
+let input = "";
+let message = "";
+function numberNeighborhoodMessage(input){
+    parseInt(input);
+    if (1 === input) {
+      message = "Beep!"
+      return message;
+    }
+    else if (2 === input){
+        console.log("Boop!: ", input);
+        message = "Boop!"
+      return message;
+    }
+    else if ( 3 === input){
+    message = "Won't you be my neighbor?"
+    return message;
+    } else {
+    message = "Outside?"
+    return message;
+  }
+}
+
 function handleFormSubmission(e){
   e.preventDefault();
-    const intake = document.getElementById("input-value-1").value;
-    console.log("intake: ", intake);
+      
+  const input = document.getElementById("input-value-1").value;
+
+   console.log("input: ", input);
     // const output = document.getElementById("output").innerText = msg;
     // document.getElementById("output").removeAttribute("class", "hidden");
-    // let inputArray = Array.from(intake);
-
-    let msgOutOfRangeTest = "";
-     // let inputValueOutOfRangeTest = "4"
-     let inputValueOutOfRangeTest =  intake;
-    parseInt(inputValueOutOfRangeTest);
-    (function inputValueOutOfRangeTestFx(inputValueOutOfRangeTest){
-      switch(inputValueOutOfRangeTest) {
-        case 1:
-          msgOutOfRangeTest = "Beep!"
-          console.log(msgOutOfRangeTest);
-          break;
-        case 2:
-          msgOutOfRangeTest = "Boop!"
-          break;
-        case 3:
-          msgOutOfRangeTest = "Won't you be my neighbor?"
-          break;
-        default:
-          msgOutOfRangeTest = "Outside?"
-          return msgOutOfRangeTest; 
+    // let inputArray = Array.from(input);
+  let message = "";
+  function numberNeighborhoodMessage(input){
+      parseInt(input);
+      if (1 === input) {
+        message = "Beep!"
+        return message;
       }
-    })();
+      else if (2 === input){
+          console.log("Boop!: ", input);
+          message = "Boop!"
+        return message;
+      }
+      else if ( 3 === input){
+      message = "Won't you be my neighbor?"
+      return message;
+      } else {
+      message = "Outside?"
+      return message;
+    }
+  }
 }
 
 window.addEventListener("load", function(){
-  document.querySelector("form#intake-form").addEventListener("submit", handleFormSubmission);
+  const form = document.querySelector("form#intake-form").addEventListener("submit", handleFormSubmission);
 });
