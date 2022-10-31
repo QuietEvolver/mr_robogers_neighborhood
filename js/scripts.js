@@ -214,14 +214,14 @@ function handleFormSubmission(e){
   let inputParse = parseInt(input);
   let messageOut = "";
     switch(inputParse) {
-      case 1:
-        messageOut = "Beep!"
+      case 3:
+        messageOut = "Won't you be my neighbor?" 
         break;
       case 2:
         messageOut = "Boop!"
         break;
-      case 3:
-        messageOut = "Won't you be my neighbor?"
+      case 1:
+        messageOut = "Beep!"
         break;
     }
     const output = document.getElementById("output").innerText = messageOut;
