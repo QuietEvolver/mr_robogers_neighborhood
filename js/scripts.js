@@ -210,31 +210,43 @@ function handleFormSubmission(e){
       
   const input = document.getElementById("input-value-1").value;
   console.log("input: ", input); 
-  let inputArr = Array.from(input);
-
-    // const output = document.getElementById("output").innerText = msg;
-    // document.getElementById("output").removeAttribute("class", "hidden");
+  // let inputArr = Array.from(input);
+  let inputParse = parseInt(input);
+  let messageOut = "";
+    switch(input) {
+      case 1:
+        messageOut = "Beep!"
+        break;
+      case 2:
+        messageOut = "Boop!"
+        break;
+      case 3:
+        messageOut = "Won't you be my neighbor?"
+        break;
+    }
+    const output = document.getElementById("output").innerText = messageOut;
+    document.getElementById("output").removeAttribute("class", "hidden");
     // let inputArray = Array.from(input);
-  
-    const messageNumbers = [ "1", "2", "3" ];
-    let display = [ ];
-    let messageOutput = " ";
-    messageNumbers.forEach(element => {
-      if(inputArr.includes(element)){
-        switch(element) {
-          case 1:
-            messageOutput = "Beep!"
-            break;
-          case 2:
-            messageOutput = "Boop!"
-            break;
-          case 3:
-            messageOutput = "Won't you be my neighbor?"
-            break;
-          default:
-            messageOutput = "Outside?"
-            return messageOutput; 
-      }}});
+  // switch attempt in for each
+    // const messageNumbers = [ "1", "2", "3" ];
+    // let display = [ ];
+    // let messageOutput = " ";
+    // messageNumbers.forEach(element => {
+    //   if(inputArr.includes(element)){
+    //     switch(element) {
+    //       case 1:
+    //         messageOutput = "Beep!"
+    //         break;
+    //       case 2:
+    //         messageOutput = "Boop!"
+    //         break;
+    //       case 3:
+    //         messageOutput = "Won't you be my neighbor?"
+    //         break;
+    //       default:
+    //         messageOutput = "Outside?"
+    //         return messageOutput; 
+    //   }}});
     // let message = "";
   
     // function numberNeighborhoodMessage(input){
