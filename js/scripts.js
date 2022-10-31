@@ -209,31 +209,37 @@ function handleFormSubmission(e){
   e.preventDefault();
       
   const input = document.getElementById("input-value-1").value;
+  console.log("input: ", input); 
 
-   console.log("input: ", input);
     // const output = document.getElementById("output").innerText = msg;
     // document.getElementById("output").removeAttribute("class", "hidden");
     // let inputArray = Array.from(input);
-  let message = "";
-  function numberNeighborhoodMessage(input){
-      parseInt(input);
-      if (1 === input) {
-        message = "Beep!"
-        return message;
-      }
-      else if (2 === input){
-          console.log("Boop!: ", input);
-          message = "Boop!"
-        return message;
-      }
-      else if ( 3 === input){
-      message = "Won't you be my neighbor?"
-      return message;
-      } else {
-      message = "Outside?"
-      return message;
-    }
-  }
+  
+    const messageNumbers = [ "1", "2", "3" ];
+    let display = [ ];
+  
+    // let message = "";
+  
+    // function numberNeighborhoodMessage(input){
+  //     parseInt(input);
+  //     if (1 === input) {
+  //       message = "Beep!"
+  //       return message;
+  //     }
+  //     else if (2 === input){
+  //         console.log("Boop!: ", input);
+  //         message = "Boop!"
+  //       return message;
+  //     }
+  //     else if ( 3 === input){
+  //     message = "Won't you be my neighbor?"
+  //     return message;
+  //     } else {
+  //     message = "Outside?"
+  //     return message;
+  //   }
+  // }
+
 }
 
 window.addEventListener("load", function(){
