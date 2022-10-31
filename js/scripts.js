@@ -213,7 +213,7 @@ function handleFormSubmission(e){
   // let inputArr = Array.from(input);
   let inputParse = parseInt(input);
   let messageOut = "";
-    switch(input) {
+    switch(inputParse) {
       case 1:
         messageOut = "Beep!"
         break;
@@ -226,29 +226,7 @@ function handleFormSubmission(e){
     }
     const output = document.getElementById("output").innerText = messageOut;
     document.getElementById("output").removeAttribute("class", "hidden");
-    // let inputArray = Array.from(input);
-  // switch attempt in for each
-    // const messageNumbers = [ "1", "2", "3" ];
-    // let display = [ ];
-    // let messageOutput = " ";
-    // messageNumbers.forEach(element => {
-    //   if(inputArr.includes(element)){
-    //     switch(element) {
-    //       case 1:
-    //         messageOutput = "Beep!"
-    //         break;
-    //       case 2:
-    //         messageOutput = "Boop!"
-    //         break;
-    //       case 3:
-    //         messageOutput = "Won't you be my neighbor?"
-    //         break;
-    //       default:
-    //         messageOutput = "Outside?"
-    //         return messageOutput; 
-    //   }}});
-    // let message = "";
-  
+
     // function numberNeighborhoodMessage(input){
   //     parseInt(input);
   //     if (1 === input) {
