@@ -90,7 +90,7 @@ const inputUINumber8 = isANumber8(inputArray8);
 let msg8 = "";
 function isANumber8(inputArray8, msg) {
   if(inputArray8.includes(3)){
-    let msg8 = "msg8 t-3";
+    let msg8 = "msg8 t-3: wont ub my neighbor?";
     return msg8;
   } else if (inputArray8.includes(2)){
     return true;
@@ -210,6 +210,7 @@ function handleFormSubmission(e){
       
   const input = document.getElementById("input-value-1").value;
   console.log("input: ", input); 
+  let inputArr = Array.from(input);
 
     // const output = document.getElementById("output").innerText = msg;
     // document.getElementById("output").removeAttribute("class", "hidden");
@@ -217,7 +218,23 @@ function handleFormSubmission(e){
   
     const messageNumbers = [ "1", "2", "3" ];
     let display = [ ];
-  
+    let messageOutput = " ";
+    messageNumbers.forEach(element => {
+      if(inputArr.includes(element)){
+        switch(element) {
+          case 1:
+            messageOutput = "Beep!"
+            break;
+          case 2:
+            messageOutput = "Boop!"
+            break;
+          case 3:
+            messageOutput = "Won't you be my neighbor?"
+            break;
+          default:
+            messageOutput = "Outside?"
+            return messageOutput; 
+      }}});
     // let message = "";
   
     // function numberNeighborhoodMessage(input){
