@@ -209,9 +209,28 @@ function handleFormSubmission(e){
   e.preventDefault();
       
   const input = document.getElementById("input-value-1").value;
-  console.log("input: ", input); 
+  console.log("input: ", input); // ['456']
+
+  const usingSplit = input.split(''); // (3) ['4', '5', '6']
+  usingSplit.forEach(function(i){
+    return i;
+  });
+
   // let inputArr = Array.from(input);
+  // let inputtedNumber = []; // array to push to
+  // inputtedNumber.push(input.splice());
+  // console.log(inputtedNumber);
+  // turn into an arr
+  // for each & set orig arr to test 0-9 thru branching
+  // for loop
+  function numInputs(){
   let inputParse = parseInt(input);
+  let numberArray = [];
+  for (let i=0; i<=inputParse; i++){
+    numberArray.push(i);
+  }
+  return i
+}
   let messageOut = "";
     switch(inputParse) {
       case 3:
