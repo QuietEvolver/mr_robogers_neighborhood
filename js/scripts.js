@@ -123,66 +123,6 @@ let inputArray7 = [3,8,]
  const outputMsg = isANumber7(inputArray7);
  outputMsg;
 
-//PSEUDOCODE
-// let userInput = doc.value
-
-// let intake = "3,444";
-// let inputArray = Array.from(intake);
-// let msg = "";
-// function isMyNeighborhoodMessage(inputArray) {
-//   if(inputArray.includes(3)){
-//     msg = "Won't you be my neighbor?";
-//         console.log("t-3");
-//     return msg;
-//   // return inputNumber;
-//   } else if (inputArray.includes(2)){
-//       console.log("t-2");
-//       msg = "Boop!"
-//     return msg;
-//   } else if(inputArray.includes(1)){
-//         console.log("t-1");
-//       msg = "Beep!"
-//         return msg;
-//   // return inputNumber;
-//   } else if (!((inputArray===1)&&(inputArray===2)&&(inputArray===3))){
-//       console.log("Outside", inputArray);
-//     let msg = "Outside?";
-//       return msg;
-//   }
-// }
-// const outputUIMsg = isMyNeighborhoodMessage(inputArray);
-// outputUIMsg;
-
-// let intake = "3,444";
-// // *not* to come first
-// let inputArray = Array.from(intake);
-// let msg = "";
-// function isMyNeighborhoodMessage(inputArray) {
-//       console.log("CLfx: inputArray", inputArray);
-//   if (!((inputArray.includes(1))&&(inputArray.includes(2))&&(inputArray.includes(3)))){
-//     let msg = "Outside?";
-//       return msg;
-//   }else if(inputArray.includes(3)){
-//     msg = "Won't you be my neighbor?";
-//         console.log("t-3");
-//     return msg;
-//   // return inputNumber;
-//   } else if (inputArray.includes(2)){
-//       console.log("t-2");
-//       msg = "Boop!"
-//     return msg;
-//   } else if(inputArray.includes(1)){
-//         console.log("t-1");
-//       msg = "Beep!"
-//         return msg;
-//   // return inputNumber;
-//   } 
-// }
-// // console.log(inputArray);
-// // const outputUIMsg = isMyNeighborhoodMessage(inputArray);
-// // outputUIMsg;
-// isMyNeighborhoodMessage();
-
 let input = "";
 let message = "";
 function numberNeighborhoodMessage(input){
@@ -215,12 +155,10 @@ for (let index = 0; index < usingSplit.length; index++) {
   console.log(index);
 }*/ 
   const usingSplit = input.split(''); // (3) ['4', '5', '6']
-  // usingSplit.forEach(function(i){
-  //   return i;
-  // });
+
+  let messageOut = "";
   usingSplit.forEach(function(i){
     console.log(i);
-    let messageOut = "";
       switch(true) {
         case 3:
           messageOut = "Won't you be my neighbor?" 
@@ -238,56 +176,8 @@ for (let index = 0; index < usingSplit.length; index++) {
     
   });
 
-  // let inputArr = Array.from(input);
-  // let inputtedNumber = []; // array to push to
-  // inputtedNumber.push(input.splice());
-  // console.log(inputtedNumber);
-  // turn into an arr
-  // for each & set orig arr to test 0-9 thru branching
-  // for loop
-  // function numInputs(){
-  // let numberArray = [];
-//   for (let i=0; i<=inputParse; i++){
-//     numberArray.push(i);
-//   }
-//   return i
-// }
-  // let inputParse = parseInt(input);
-  // let messageOut = "";
-  //   switch(inputParse) {
-  //     case 3:
-  //       messageOut = "Won't you be my neighbor?" 
-  //       break;
-  //     case 2:
-  //       messageOut = "Boop!"
-  //       break;
-  //     case 1:
-  //       messageOut = "Beep!"
-  //       break;
-  //   }
-    const output = document.getElementById("output").innerText = messageOut;
-    document.getElementById("output").removeAttribute("class", "hidden");
-
-    // function numberNeighborhoodMessage(input){
-  //     parseInt(input);
-  //     if (1 === input) {
-  //       message = "Beep!"
-  //       return message;
-  //     }
-  //     else if (2 === input){
-  //         console.log("Boop!: ", input);
-  //         message = "Boop!"
-  //       return message;
-  //     }
-  //     else if ( 3 === input){
-  //     message = "Won't you be my neighbor?"
-  //     return message;
-  //     } else {
-  //     message = "Outside?"
-  //     return message;
-  //   }
-  // }
-
+  const output = document.getElementById("output").innerText = messageOut;
+  document.getElementById("output").removeAttribute("class", "hidden");
 }
 
 window.addEventListener("load", function(){
