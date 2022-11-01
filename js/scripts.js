@@ -155,26 +155,47 @@ for (let index = 0; index < usingSplit.length; index++) {
   console.log(index);
 }*/ 
   const usingSplit = input.split(''); // (3) ['4', '5', '6']
-
   let messageOut = "";
-  usingSplit.forEach(function(i){
-    console.log(i);
-      switch(true) {
-        case 3:
-          messageOut = "Won't you be my neighbor?" 
-          break;
-        case 2:
-          messageOut = "Boop!"
-          break;
-        case 1:
-          messageOut = "Beep!"
-          break;
-        default: 
-          messageOut = "Outside?"
-      }
-    console.log(i, messageOut);
-    
+  //let indexStrArr = [];
+  function splitFxnMethod(){
+    usingSplit.forEach(function(i){
+    indexStrArr.push(i);
   });
+  } console.log("indexStrArr", indexStrArr);
+      // switch(true) {
+      //   case 3:
+      //     messageOut = "Won't you be my neighbor?" 
+      //     break;
+      //   case 2:
+      //     messageOut = "Boop!"
+      //     break;
+      //   case 1:
+      //     messageOut = "Beep!"
+      //     break;
+      //   default: 
+      //     messageOut = "Outside?"
+      // }
+    // console.log(i, messageOut);
+  // });
+  // let messageOut = "";
+      function isANumberSplitEvaluator(indexStrArr) {
+      if(indexStrArr===(3)){
+         messageOut = "Won't you be my neighbor?";
+         return messageOut;
+      } else if (indexStrArr===(2)){
+           messageOut = "Boop!";
+           return messageOut;
+       } else if(indexStrArr===(1)){
+           messageOut = "Beep!";
+           return messageOut;  
+       } else {
+           console.log("CL: Outside4+", indexStrArr);
+           let messageOut = "Msg: Outside?";
+           return messageOut;
+       }
+     }
+  isANumberSplitEvaluator();
+   
 
   const output = document.getElementById("output").innerText = messageOut;
   document.getElementById("output").removeAttribute("class", "hidden");
