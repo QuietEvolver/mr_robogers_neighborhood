@@ -210,10 +210,32 @@ function handleFormSubmission(e){
       
   const input = document.getElementById("input-value-1").value;
   console.log("input: ", input); // ['456']
-
+/* returns indexes only.
+for (let index = 0; index < usingSplit.length; index++) {
+  console.log(index);
+}*/ 
   const usingSplit = input.split(''); // (3) ['4', '5', '6']
+  // usingSplit.forEach(function(i){
+  //   return i;
+  // });
   usingSplit.forEach(function(i){
-    return i;
+    console.log(i);
+    let messageOut = "";
+      switch(true) {
+        case 3:
+          messageOut = "Won't you be my neighbor?" 
+          break;
+        case 2:
+          messageOut = "Boop!"
+          break;
+        case 1:
+          messageOut = "Beep!"
+          break;
+        default: 
+          messageOut = "Outside?"
+      }
+    console.log(i, messageOut);
+    
   });
 
   // let inputArr = Array.from(input);
@@ -223,26 +245,26 @@ function handleFormSubmission(e){
   // turn into an arr
   // for each & set orig arr to test 0-9 thru branching
   // for loop
-  function numInputs(){
-  let inputParse = parseInt(input);
-  let numberArray = [];
-  for (let i=0; i<=inputParse; i++){
-    numberArray.push(i);
-  }
-  return i
-}
-  let messageOut = "";
-    switch(inputParse) {
-      case 3:
-        messageOut = "Won't you be my neighbor?" 
-        break;
-      case 2:
-        messageOut = "Boop!"
-        break;
-      case 1:
-        messageOut = "Beep!"
-        break;
-    }
+  // function numInputs(){
+  // let numberArray = [];
+//   for (let i=0; i<=inputParse; i++){
+//     numberArray.push(i);
+//   }
+//   return i
+// }
+  // let inputParse = parseInt(input);
+  // let messageOut = "";
+  //   switch(inputParse) {
+  //     case 3:
+  //       messageOut = "Won't you be my neighbor?" 
+  //       break;
+  //     case 2:
+  //       messageOut = "Boop!"
+  //       break;
+  //     case 1:
+  //       messageOut = "Beep!"
+  //       break;
+  //   }
     const output = document.getElementById("output").innerText = messageOut;
     document.getElementById("output").removeAttribute("class", "hidden");
 
