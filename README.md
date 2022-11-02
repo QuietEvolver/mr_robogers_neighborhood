@@ -33,7 +33,13 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 
 | Test | Input | Output |
 |--------|:------:|:-----:|
-| 1.  This test will take an input. | Input: x  |  Output: x |
+| 1. Describe: function inputValue(){
+
+Test: "This test will take an input."
+Code:
+let input0 = 2;
+inputValue(input0)
+|  Expected Output: 2 |
 | 2.  This test will take in number. | Input: 0 |  Output: 0 |
 | 3.   This test will require a number only. | Input: 1 |  Output: 1 |
 | 4.  This test will identify a given number 1 and produce a message based on that number. | Input: 1 |  Output: Beep! |

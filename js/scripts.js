@@ -1,16 +1,17 @@
 // test 1
-let input0 = "x"
-let inputValue0; 
-function inputValue(input0){
+function inputValue(){
+  let input0 = 2;
   return input0;
 }
+inputValue(2); //2
 
 // test 2
 function inputValueNumber0(inputValue0){
   if (0 >= inputValue0 <= 9){
     return inputValue0;
   }
-}
+} 
+inputValueNumber0(3) //3
 
 // test 3
 let inputValueNumber =  "0";
@@ -123,6 +124,27 @@ let inputArray7 = [3,8,]
  const outputMsg = isANumber7(inputArray7);
  outputMsg;
 
+// mult num fx
+let inputArray10 = ""; // [345]
+let msg10 = "";
+function isANumber10(inputArray10) {
+  if(inputArray10.includes(3)){
+     msg10 = "Won't you be my neighbor?";
+     return msg10;
+  } else if (inputArray10.includes(2)){
+       msg10 = "Boop!";
+       return msg10;
+   } else if(inputArray10.includes(1)){
+       msg10 = "Beep!";
+       return msg10;  
+   } else {
+       console.log("Outside", inputArray10);
+       msg10 = "Outside?";
+       return msg10;
+   }
+ }
+
+
 let input = "";
 let message = "";
 function numberNeighborhoodMessage(input){
@@ -156,30 +178,32 @@ for (let index = 0; index < usingSplit.length; index++) {
 }*/ 
   const usingSplit = input.split(''); // (3) ['4', '5', '6']
   let messageOut = "";
-  //let indexStrArr = [];
-  function splitFxnMethod(){
-    usingSplit.forEach(function(i){
-    indexStrArr.push(i);
+  usingSplit.forEach(function(i){
+    console.log(i);
+    let messageOut = "";
+      switch(true) {
+        case 3:
+          messageOut = "Won't you be my neighbor?" 
+          break;
+        case 2:
+          messageOut = "Boop!"
+          break;
+        case 1:
+          messageOut = "Beep!"
+          break;
+        default: 
+          messageOut = "Outside?"
+      }
+    console.log(i, messageOut);
+    
   });
-  } console.log("indexStrArr", indexStrArr);
-      // switch(true) {
-      //   case 3:
-      //     messageOut = "Won't you be my neighbor?" 
-      //     break;
-      //   case 2:
-      //     messageOut = "Boop!"
-      //     break;
-      //   case 1:
-      //     messageOut = "Beep!"
-      //     break;
-      //   default: 
-      //     messageOut = "Outside?"
-      // }
-    // console.log(i, messageOut);
-  // });
-  // let messageOut = "";
+
+  /* // this works in console (built off isNumber7(inputArray7))
+  // let indexStr = ""
+  //  indexStrArr = Array.from(indexStr)
+  // let messageOut = "";   
       function isANumberSplitEvaluator(indexStrArr) {
-      if(indexStrArr===(3)){
+      if(indexStrArr===(3)){  //SPACING?
          messageOut = "Won't you be my neighbor?";
          return messageOut;
       } else if (indexStrArr===(2)){
@@ -195,7 +219,7 @@ for (let index = 0; index < usingSplit.length; index++) {
        }
      }
   isANumberSplitEvaluator();
-   
+*/
 
   const output = document.getElementById("output").innerText = messageOut;
   document.getElementById("output").removeAttribute("class", "hidden");
