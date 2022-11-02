@@ -33,8 +33,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 
 | Test | Input | Output |
 |--------|:------:|:-----:|
-| 1. Describe: function inputValue(){
-
+| 1. Describe: function inputValue()
 Test: "This test will take an input."
 Code:
 let input0 = 2;
