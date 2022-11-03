@@ -33,17 +33,30 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 
 [TDD](https://www.learnhowtoprogram.com/introduction-to-programming/arrays-and-looping/text-analyzer-with-tdd-wordcounter)
 
-Describe: function inputValue() 
 
-Test: "This test will take an input."
-Code:
-let input0 = 2;
-inputValue(input0)
-Expected Output: 2
+<br>1. Describe: function inputValue() 
+<br>
+<br>Test: "This test will take an input."
+<br>Code:
+<br>const input0 = 1;
+<br>inputValue(2);
+<br>Expected Output: 1
+<br>
+<br>2. Describe: function inputValueNumber0() 
+<br>
+<br>Test: "This test will take a number."
+<br>Code:
+<br>const inputValue = 2
+<br>inputValueNumber0(inputVAlue0);
+<br>Expected Output: 2
 
-
-| 2.  This test will take in number. | Input: 0 |  Output: 0 |
-| 3.   This test will require a number only. | Input: 1 |  Output: 1 |
+<br> 3. Describe: function inputValueNumber0() 
+<br>
+<br>Test: "This test will require a number only."
+<br>Code:
+<br>const inputValue = "0"
+<br>inputValueNumberFx(inputValueNumber)
+<br>Expected Output: 0
 | 4.  This test will identify a given number 1 and produce a message based on that number. | Input: 1 |  Output: Beep! |
 | 5.  This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. | Input: 2 |  Output: Boop!|
 | 6.  This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input. | Input: 3 |  Output: Won't you be my neighbor?|
