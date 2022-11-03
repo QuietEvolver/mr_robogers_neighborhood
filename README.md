@@ -12,7 +12,7 @@
 * Javascript
 
 ## Description
-Create a web application that takes a number from the user and returns a list of values from 0 to the user's inputted number. Here is the (repo)[https://github.com/jenniferholcomb/mr-robogers-neighborhood.git]
+Create a web application that takes a number from the user and returns a list of values from 0 to the user's inputted number. Here is the [repo](https://github.com/quietevolver/mr-robogers-neighborhood.git)
 
 ### Objectives 
 
@@ -31,14 +31,17 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 
 * These substitutions are written from least to most important. The first substitution should apply unless the second does, and the same with the second and third. In other words, the substitution for the number 1 should apply unless there's a 2 present in the number. Then, the substitution for the number 2 should apply unless there's a 3 present in the number.
 
-| Test | Input | Output |
-|--------|:------:|:-----:|
-| 1. Describe: function inputValue()\
-Test: "This test will take an input."\
-Code:\
-let input0 = 2;\
+[TDD](https://www.learnhowtoprogram.com/introduction-to-programming/arrays-and-looping/text-analyzer-with-tdd-wordcounter)
+
+Describe: function inputValue() 
+
+Test: "This test will take an input."
+Code:
+let input0 = 2;
 inputValue(input0)
-|  Expected Output: 2 |
+Expected Output: 2
+
+
 | 2.  This test will take in number. | Input: 0 |  Output: 0 |
 | 3.   This test will require a number only. | Input: 1 |  Output: 1 |
 | 4.  This test will identify a given number 1 and produce a message based on that number. | Input: 1 |  Output: Beep! |
