@@ -33,10 +33,10 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 
 | Test | Input | Output |
 |--------|:------:|:-----:|
-| 1. Describe: function inputValue()<br />
-Test: "This test will take an input."<br />
-Code:<br />
-let input0 = 2;<br />
+| 1. Describe: function inputValue()\
+Test: "This test will take an input."\
+Code:\
+let input0 = 2;\
 inputValue(input0)
 |  Expected Output: 2 |
 | 2.  This test will take in number. | Input: 0 |  Output: 0 |
