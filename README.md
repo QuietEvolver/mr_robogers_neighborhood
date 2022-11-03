@@ -54,10 +54,19 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br>Test: "This test will require a number only."
 <br>Code:
-<br>const inputValue = "0"
-<br>inputValueNumberFx(inputValueNumber)
+<br>const inputValueNumber = "0"
+<br>inputValueNumberFx(inputValueNumber);
 <br>Expected Output: 0
-| 4.  This test will identify a given number 1 and produce a message based on that number. | Input: 1 |  Output: Beep! |
+<br>
+<br> 4. Describe: function inputValueNumberBeepFx1(inputValueNumberBeep1)
+<br>
+<br>Test: "This test will identify a given number 1 and produce a message based on that number."
+<br>Code:
+<br>const inputValueNumberBeep1 = "1"
+<br>let msg1 = "Beep!"
+<br>inputValueNumberBeepFx1(inputValueNumberBeep1);
+<br>Expected Output: Beep! 
+|
 | 5.  This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. | Input: 2 |  Output: Boop!|
 | 6.  This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input. | Input: 3 |  Output: Won't you be my neighbor?|
 | 7.  This test will identify a multiple numbers entry and produce a specific message for number which appears first from the user input. | Input: 321,803 |  Output: Won't you be my neighbor?|
