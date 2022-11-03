@@ -34,7 +34,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 [TDD](https://www.learnhowtoprogram.com/introduction-to-programming/arrays-and-looping/text-analyzer-with-tdd-wordcounter)
 
 
-<br>1. Describe: function inputValue() 
+<br>1. Describe: inputValue() 
 <br>
 <br>Test: "This test will take an input."
 <br>Code:
@@ -42,15 +42,15 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>inputValue(2);
 <br>Expected Output: 1
 <br>
-<br>2. Describe: function inputValueNumber0() 
+<br>2. Describe: inputValueNumber0() 
 <br>
 <br>Test: "This test will take a number."
 <br>Code:
 <br>const inputValue = 2
 <br>inputValueNumber0(inputVAlue0);
 <br>Expected Output: 2
-
-<br> 3. Describe: function inputValueNumber0() 
+<br>
+<br> 3. Describe: inputValueNumber0() 
 <br>
 <br>Test: "This test will require a number only."
 <br>Code:
@@ -58,7 +58,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>inputValueNumberFx(inputValueNumber);
 <br>Expected Output: 0
 <br>
-<br> 4. Describe: function inputValueNumberBeepFx1(inputValueNumberBeep1)
+<br> 4. Describe: inputValueNumberBeepFx1()
 <br>
 <br>Test: "This test will identify a given number 1 and produce a message based on that number."
 <br>Code:
@@ -66,8 +66,24 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>let msg1 = "Beep!"
 <br>inputValueNumberBeepFx1(inputValueNumberBeep1);
 <br>Expected Output: Beep! 
-|
-| 5.  This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. | Input: 2 |  Output: Boop!|
+<br>
+<br> 5. Describe: inputValueNumberBoopFx2(inputValueNumberBoop2)
+<br>
+<br>Test: "This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
+<br>Code:
+<br>const inputValueNumberBoop2 = "2"
+<br>let msg1 = "Beep!"
+<br>inputValueNumberBoopFx2(inputValueNumberBoop2)
+<br>Expected Output: Boop!
+<br>
+<br> 6. Describe: inputValueNumberBoopFx2(inputValueNumberBoop2)
+<br>
+<br>Test: "This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
+<br>Code:
+<br>const inputValueNumberBoop2 = "2"
+<br>let msg1 = "Beep!"
+<br>inputValueNumberBoopFx2(inputValueNumberBoop2)
+<br>Expected Output: Boop!
 | 6.  This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input. | Input: 3 |  Output: Won't you be my neighbor?|
 | 7.  This test will identify a multiple numbers entry and produce a specific message for number which appears first from the user input. | Input: 321,803 |  Output: Won't you be my neighbor?|
 | 8.  This test will intake a multiple numbers entry and weigh from 1-3 with 3 being the most weighted. | Input: 321,803 |  Output: Won't you be my neighbor?|
