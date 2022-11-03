@@ -1,42 +1,36 @@
-// test 1
-function inputValue(){
-  let input0 = 2;
-  return input0;
-}
-inputValue(2); //2
 
-// test 2
+function inputValue(input0){
+  return input0;
+} 
+
 function inputValueNumber0(inputValue0){
+ parinputValue0
   if (0 >= inputValue0 <= 9){
     return inputValue0;
   }
 } 
-inputValueNumber0(3) //3
 
-// test 3
-let inputValueNumber =  "0";
-parseInt(inputValueNumber);
 function inputValueNumberFx(inputValueNumber){
+  let inputValue =  "0";
+  let inputvalueNumber = parseInt(inputValueNumber);
   if (0 >= inputValueNumber <= 9){
     return inputValueNumber;
   }
 }
 
-// test 4
-let inputValueNumberBeep1 =  "1";
-let msg1 = "";
-function inputValueNumberBeepFx1(inputValueNumberBeep1){
+function inputValueNumberBeepFx1(){
+  let msg1 = "";
+  let inputValueNumberBeep1;
   parseInt(inputValueNumberBeep1);
-  if (1 === inputValueNumberBeep1){
+  if (inputValueNumberBeep1 === 1){
       msg1 = "Beep!"
     return msg1;
   }
 }
 
-// test 5
-let inputValueNumberBoop2 =  "2";
-let msg2 = "";
-function inputValueNumberBoopFx2(inputValueNumberBoop2){
+function inputValueNumberBoopFx2(){
+  let inputValueNumberBoop2 =  "2";
+  let msg2 = "";
   parseInt(inputValueNumberBoop2);
   if (1 === inputValueNumberBoop2) {
     msg2 = "Beep!"
@@ -49,7 +43,6 @@ function inputValueNumberBoopFx2(inputValueNumberBoop2){
   }
 }
 
-// test 6
 let inputThree = parseInt("3");
 let msg3 = "";
   switch(inputThree) {
@@ -64,46 +57,7 @@ let msg3 = "";
       break;
   }
 
-// test 9
-let msgOutOfRangeTest = "";
-let inputValueOutOfRangeTest = "4"
-parseInt(inputValueOutOfRangeTest);
-(function inputValueOutOfRangeTestFx(inputValueOutOfRangeTest){
-  switch(inputValueOutOfRangeTest) {
-    case 1:
-      msgOutOfRangeTest = "Beep!"
-      break;
-    case 2:
-      msgOutOfRangeTest = "Boop!"
-      break;
-    case 3:
-      msgOutOfRangeTest = "Won't you be my neighbor?"
-      break;
-    default:
-      msgOutOfRangeTest = "Outside?"
-      return msgOutOfRangeTest; 
-  }
-})();
-
-// test 8
-let inputArray8 = [1,8,3]
-const inputUINumber8 = isANumber8(inputArray8);
-let msg8 = "";
-function isANumber8(inputArray8, msg) {
-  if(inputArray8.includes(3)){
-    let msg8 = "msg8 t-3: wont ub my neighbor?";
-    return msg8;
-  } else if (inputArray8.includes(2)){
-    return true;
-  } else if(inputArray8.includes(1)){
-        return true;
-  } else if (inputArray8.includes(9)){
-    return false;
-  }
-}
-
-// Test 7
-let inputArray7 = [3,8,]
+let inputArray7 = [3,8]
  let msg7 = "";
  function isANumber7(inputArray7) {
    if(inputArray7.includes(3)){
@@ -124,23 +78,23 @@ let inputArray7 = [3,8,]
  const outputMsg = isANumber7(inputArray7);
  outputMsg;
 
-// mult num fx
-let inputArray10 = ""; // [345]
-let msg10 = "";
-function isANumber10(inputArray10) {
-  if(inputArray10.includes(3)){
-     msg10 = "Won't you be my neighbor?";
-     return msg10;
-  } else if (inputArray10.includes(2)){
-       msg10 = "Boop!";
-       return msg10;
-   } else if(inputArray10.includes(1)){
-       msg10 = "Beep!";
-       return msg10;  
+let input8 = "321,803"; 
+let inputArray8 = [3,2,1,8,0,3];
+let msg8 = "";
+function inputArray8(inputArray8) {
+  if(inputArray8.includes(3)){
+     msg8 = "Won't you be my neighbor?";
+     return msg8;
+  } else if (inputArray8.includes(2)){
+       msg8 = "Boop!";
+       return msg8;
+   } else if(inputArray8.includes(1)){
+       msg8 = "Beep!";
+       return msg8;  
    } else {
-       console.log("Outside", inputArray10);
-       msg10 = "Outside?";
-       return msg10;
+       console.log("Outside", inputArray8);
+       msg8 = "Outside?";
+       return msg8;
    }
  }
 
