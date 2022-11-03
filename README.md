@@ -65,27 +65,37 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>const inputValueNumberBeep1 = "1"
 <br>let msg1 = "Beep!"
 <br>inputValueNumberBeepFx1(inputValueNumberBeep1);
-<br>Expected Output: Beep! 
+<br>Expected Output: "Beep!" 
 <br>
-<br> 5. Describe: inputValueNumberBoopFx2(inputValueNumberBoop2)
-<br>
-<br>Test: "This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
-<br>Code:
-<br>const inputValueNumberBoop2 = "2"
-<br>let msg1 = "Beep!"
-<br>inputValueNumberBoopFx2(inputValueNumberBoop2)
-<br>Expected Output: Boop!
-<br>
-<br> 6. Describe: inputValueNumberBoopFx2(inputValueNumberBoop2)
+<br> 5. Describe: inputValueNumberBoopFx2()
 <br>
 <br>Test: "This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
 <br>Code:
 <br>const inputValueNumberBoop2 = "2"
-<br>let msg1 = "Beep!"
-<br>inputValueNumberBoopFx2(inputValueNumberBoop2)
-<br>Expected Output: Boop!
-| 6.  This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input. | Input: 3 |  Output: Won't you be my neighbor?|
-| 7.  This test will identify a multiple numbers entry and produce a specific message for number which appears first from the user input. | Input: 321,803 |  Output: Won't you be my neighbor?|
+<br>let msg2 = "Boop!"
+<br>inputValueNumberBoopFx2(inputValueNumberBoop2);
+<br>Expected Output: "Boop!"
+<br>
+<br> 6. Describe: parseint()
+<br>
+<br>Test: "This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input."
+<br>Code:
+<br>let inputThree = parseInt("3");
+<br>let msg3 = "";
+<br>parseInt("3")
+<br>Expected Output: "Won't you be my neighbor?"
+<br>
+<br> 7. Describe: isANumber()
+<br>
+<br>Test: " This test will identify a multiple numbers entry and produce a specific message for number which appears first from the user input."
+<br>Code:
+<br>parseInt("3")
+<br>let inputArray7 = parseInt("3")
+<br>let msg3 = "";
+<br>isANumber7(inputArray7);
+<br>Expected Output: "Won't you be my neighbor?"
+
+| 7.  | Input: 321,803 
 | 8.  This test will intake a multiple numbers entry and weigh from 1-3 with 3 being the most weighted. | Input: 321,803 |  Output: Won't you be my neighbor?|
 | 9.  This test will identify if numbers 1, 2, 3 are not found from the user input. | Input: 5,806 |  Output: Outside?|
 
