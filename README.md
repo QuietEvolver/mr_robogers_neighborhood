@@ -85,21 +85,16 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>parseInt("3")
 <br>Expected Output: "Won't you be my neighbor?"
 <br>
-<br> 7. Describe: isANumber()
+<br> 7. Describe: isANumber7()
 <br>
-<br>Test: " This test will identify a multiple numbers entry and produce a specific message for number which appears first from the user input."
+<br>Test: " This test will identify a multiple integers entry and produce a specific message for number which appears first from the user input."
 <br>Code:
-<br>parseInt("3")
-<br>let inputArray7 = parseInt("3")
-<br>let msg3 = "";
-<br>isANumber7(inputArray7);
+<br>let msg7 = ""
+<br>isANumber7(inputArray7); //[3,2,1,8,0,3]
+<br>const outputMsg = isANumber7(inputArray7);
+<br>outputMsg;
 <br>Expected Output: "Won't you be my neighbor?"
-
-| 7.  | Input: 321,803 
-| 8.  This test will intake a multiple numbers entry and weigh from 1-3 with 3 being the most weighted. | Input: 321,803 |  Output: Won't you be my neighbor?|
-| 9.  This test will identify if numbers 1, 2, 3 are not found from the user input. | Input: 5,806 |  Output: Outside?|
-
-
+<br>
 ## Setup/Installation Requirements
 
 * Clone this repo to your workspace.
