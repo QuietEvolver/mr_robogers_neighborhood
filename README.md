@@ -36,7 +36,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 
 <br> Describe: inputValue() 
 <br>
-<br>Test: "This test will take an input."
+<br>Test: "It should take an input."
 <br>Code:
 <br>const input0 = 1;
 <br>inputValue(2);
@@ -44,13 +44,13 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br>Describe: inputValueNumber0() 
 <br>
-<br>Test: "This test will take an input."
+<br>Test: "It should take an input."
 <br>Code:
 <br>const inputValue = 1;
 <br>inputValueNumber0(2);
 <br>Expected Output: 1
 <br>
-<br>Test: "This test will take a number."
+<br>Test: "It should take a number."
 <br>Code:
 <br>const inputValue = 2
 <br>inputValueNumber0(inputVAlue0);
@@ -58,20 +58,20 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br> 3. Describe: inputValueNumber0() 
 <br>
-<br>Test: "This test will take an input."
+<br>Test: "It should take an input."
 <br>Code:
 <br>const inputValueNumber = 1;
 <br>inputValueNumberFx(2);
 <br>Expected Output: 1
 <br>
-<br>Test: "This test will take a number."
+<br>Test: "It should take a number."
 <br>Code:
 <br>const inputValueNumber = 2
 <br>inputValueNumberFx(inputValueNumber);
 <br>Expected Output: 2
 <br>
 <br>
-<br>Test: "This test will require a number only."
+<br>Test: "It should require a number only."
 <br>Code:
 <br>const inputValueNumber = "0"
 <br>inputValueNumberFx(inputValueNumber);
@@ -79,26 +79,26 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br> 4. Describe: inputValueNumberBeepFx1()
 <br>
-<br>Test: "This test will take an input."
+<br>Test: "It should take an input."
 <br>Code:
 <br>const inputValueNumberBeep1 = 1;
 <br>inputValueNumberFx1(2);
 <br>Expected Output: 1
 <br>
-<br>Test: "This test will take a number."
+<br>Test: "It should take a number."
 <br>Code:
 <br>const inputValueNumberBeep1 = 2
 <br>inputValueNumberBeepFx1(inputValueNumberBeep1);
 <br>Expected Output: 2
 <br>
 <br>
-<br>Test: "This test will require a number only."
+<br>Test: "It should require a number only."
 <br>Code:
 <br>const inputValueNumberBeep1 = "0"
 <br>inputValueNumberBeepFx1(inputValueNumberBeep1);
 <br>Expected Output: 0
 <br>
-<br>Test: "This test will identify a given number 1 and produce a message based on that number."
+<br>Test: "It should identify a given number 1 and produce a message based on that number."
 <br>Code:
 <br>const inputValueNumberBeep1 = "1"
 <br>let msg1 = "Beep!"
@@ -107,33 +107,33 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br> 5. Describe: inputValueNumberBoopFx2()
 <br>
-<br>Test: "This test will take an input."
+<br>Test: "It should take an input."
 <br>Code:
 <br>const inputValueNumberBoop2 = 1;
 <br>inputValueNumberBoop2(2);
 <br>Expected Output: 1
 <br>
-<br>Test: "This test will take a number."
+<br>Test: "It should take a number."
 <br>Code:
 <br>const inputValueNumberBoop2 = 2
 <br>inputValueNumberBoopFx2(inputValueNumberBoop2);
 <br>Expected Output: 2
 <br>
 <br>
-<br>Test: "This test will require a number only."
+<br>Test: "It should require a number only."
 <br>Code:
 <br>const inputValueNumberBoop2 = "0"
 <br>inputValueNumberBoopFx2(inputValueNumberBoop2);
 <br>Expected Output: 0
 <br>
-<br>Test: "This test will identify a given number 1 and produce a message based on that number."
+<br>Test: "It should identify a given number 1 and produce a message based on that number."
 <br>Code:
 <br>const inputValueNumberBoop2 = "1"
 <br>let msg1 = "Beep!"
 <br>inputValueNumberBoopFx2(inputValueNumberBoop2);
 <br>Expected Output: "Beep!" 
 <br>
-<br>Test: "This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
+<br>Test: "It should identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
 <br>Code:
 <br>const inputValueNumberBoop2 = "2"
 <br>let msg2 = "Boop!"
@@ -142,40 +142,40 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br> 6. Describe: parseint()
 <br>
-<br>Test: "This test will take an input."
+<br>Test: "It should take an input."
 <br>Code:
 <br>const inputThree = 1;
 <br>parseint(2);
 <br>Expected Output: 1
 <br>
-<br>Test: "This test will take a number."
+<br>Test: "It should take a number."
 <br>Code:
 <br>const inputThree = 2
 <br>parseint(inputThree);
 <br>Expected Output: 2
 <br>
 <br>
-<br>Test: "This test will require a number only."
+<br>Test: "It should require a number only."
 <br>Code:
 <br>const inputThree = "0"
 <br>parseint(inputThree);
 <br>Expected Output: 0
 <br>
-<br>Test: "This test will identify a given number 1 and produce a message based on that number."
+<br>Test: "It should identify a given number 1 and produce a message based on that number."
 <br>Code:
 <br>const inputThree = "1"
 <br>let msg3 = "Beep!"
 <br>parseint("1");
 <br>Expected Output: "Beep!" 
 <br>
-<br>Test: "This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
+<br>Test: "It should identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
 <br>Code:
 <br>const inputThree = "2"
 <br>let msg3 = "Boop!"
 <br>parseint(inputThree);
 <br>Expected Output: "Boop!"
 <br>
-<br>Test: "This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input."
+<br>Test: "It should identify numbers 1-3 and produce a specific message for number which appears first from the user input."
 <br>Code:
 <br>let inputThree = parseInt("3");
 <br>let msg3 = "";
@@ -184,47 +184,47 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br> 7. Describe: isANumber7()
 <br>
-<br>Test: "This test will take an input."
+<br>Test: "It should take an input."
 <br>Code:
 <br>const inputSeven = 1;
 <br>isANumber7(2);
 <br>Expected Output: 1
 <br>
-<br>Test: "This test will take a number."
+<br>Test: "It should take a number."
 <br>Code:
 <br>const inputSeven = 2
 <br>isANumber7(inputSeven);
 <br>Expected Output: 2
 <br>
 <br>
-<br>Test: "This test will require a number only."
+<br>Test: "It should require a number only."
 <br>Code:
 <br>const inputSeven = "0"
 <br>isANumber7(inputSeven);
 <br>Expected Output: 0
 <br>
-<br>Test: "This test will identify a given number 1 and produce a message based on that number."
+<br>Test: "It should identify a given number 1 and produce a message based on that number."
 <br>Code:
 <br>const inputSeven = "1"
 <br>let msg7 = "Beep!"
 <br>isANumber7("1");
 <br>Expected Output: "Beep!" 
 <br>
-<br>Test: "This test will identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
+<br>Test: "It should identify numbers 1-2 and produce a specific message for number which appears first from the user input. "
 <br>Code:
 <br>const inputSeven = "2"
 <br>let msg7 = "Boop!"
 <br>isANumber7(inputThree);
 <br>Expected Output: "Boop!"
 <br>
-<br>Test: "This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input."
+<br>Test: "It should identify numbers 1-3 and produce a specific message for number which appears first from the user input."
 <br>Code:
 <br>let inputArray7 = parseInt("3");
 <br>let msg7 = "";
 <br>isANumber7("3")
 <br>Expected Output: "Won't you be my neighbor?"
 <br>
-<br>Test: " This test will identify a multiple integers entry and produce a specific message for number which appears first from the user input."
+<br>Test: " It should identify a multiple integers entry and produce a specific message for number which appears first from the user input."
 <br>Code:
 <br>let msg7 = ""
 <br>let inputArray7 = [3,2,1,8,0,3]
@@ -235,7 +235,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>
 <br> 8. Describe: isANumber10()
 <br>
-<br>Test: "This test will identify numbers 1-3 and produce a specific message for number which appears first from the user input."
+<br>Test: "It should identify numbers 1-3 and produce a specific message for number which appears first from the user input."
 <br>Code:
 <br>let inputThree = parseInt("3");
 <br>let msg3 = "";
@@ -243,7 +243,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>Expected Output: "Won't you be my neighbor?"
 <br>
 <br>
-<br>Test: " This test will identify a multiple integers entry and produce a specific message for number which appears first from the user input."
+<br>Test: " It should identify a multiple integers entry and produce a specific message for number which appears first from the user input."
 <br>Code:
 <br>let msg7 = ""
 <br>let inputArray = [3,2,1,8,0,3]
@@ -253,7 +253,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 <br>Expected Output: "Won't you be my neighbor?"
 <br>
 <br>
-<br>Test: "This test will intake a multiple string entry, turn into integer and weigh from 1-3 with 3 being the most weighted."
+<br>Test: "It should intake a multiple string entry, turn into integer and weigh from 1-3 with 3 being the most weighted."
 <br>Code:
 <br>let msg10 = ""
 <br>let input10 = "321,803"; 
