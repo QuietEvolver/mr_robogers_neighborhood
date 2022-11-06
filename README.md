@@ -43,18 +43,31 @@ const input = "1";
 numInputCounter()();
 Expected Output: 1
 
-
 Test: "It should return 'Outside' if a number is greater than 0-9 as a number input."
 Code:
 const inputValue0 = 2022;
 inputValueNumber0()();
-Expected Output: "Outside"
+Expected Output: "Outside?"
 
-Test: "It should return "Outside" for an input string."
+Test: "It should return 'Outside?' for an input string."
 Code: 
 const inputValue0 = "2022";
 inputValueNumber0()();
-Expected Output: "Outside"
+Expected Output: "Outside?"
+
+Test: "It should return 2 for an input string turned integer."
+Code: 
+const inputValue = "2";
+const inputValue0 = parseInt(inputValue);
+inputValueNumber0()();
+Expected Output: 2
+
+Test: "It should return 'Outside?' for an input string turned integer."
+Code: 
+const inputValue = "2022";
+const inputValue0 = parseInt(inputValue);
+inputValueNumber0()();
+Expected Output: "Outside?"
 ```
 
 ## Setup/Installation Requirements
