@@ -35,19 +35,25 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 ```
 ## Tests
 
-Describe: numInputCounter()
+Describe: inputValueNumber0()
 
 Test: "It should return 1 if a passage has just one number input."
 Code:
 const input = "1";
-numInputCounter(input);
+numInputCounter()();
 Expected Output: 1
 
 
 Test: "It should return 'Outside' if a number is greater than 0-9 as a number input."
 Code:
-const input = "2022";
-numInputCounter(input);
+const inputValue0 = 2022;
+inputValueNumber0()();
+Expected Output: "Outside"
+
+Test: "It should return "Outside" for an input string."
+Code: 
+const inputValue0 = "2022";
+inputValueNumber0()();
 Expected Output: "Outside"
 ```
 

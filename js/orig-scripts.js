@@ -4,7 +4,6 @@ function inputValue(input0){
 } 
 
 function inputValueNumber0(inputValue0){
- parinputValue0
   if (0 >= inputValue0 <= 9){
     return inputValue0;
   }
