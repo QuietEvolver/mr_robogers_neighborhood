@@ -68,6 +68,13 @@ const inputValue = "2022";
 const inputValue0 = parseInt(inputValue);
 inputValueNumber0()();
 Expected Output: "Outside?"
+
+Test: "It should return 'Beep!' for an input split string, parsed integer."
+Code: 
+const inputValue = "2022";
+const inputValue0 = parseInt(inputValue);
+inputValueNumber0()();
+Expected Output: "Beep?"
 ```
 
 ## Setup/Installation Requirements
