@@ -43,6 +43,12 @@ const input = "1";
 numInputCounter(input);
 Expected Output: 1
 
+
+Test: "It should return 'Outside' if a number is greater than 0-9 as a number input."
+Code:
+const input = "2022";
+numInputCounter(input);
+Expected Output: "Outside"
 ```
 
 ## Setup/Installation Requirements
