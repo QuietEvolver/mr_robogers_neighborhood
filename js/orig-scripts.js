@@ -135,13 +135,13 @@ for (let index = 0; index < usingSplit.length; index++) {
     console.log(i);
     let messageOut = "";
       switch(true) {
-        case (3):
+        case ("3"):
           messageOut = "Won't you be my neighbor?" 
           break;
-        case (2):
+        case ("2"):
           messageOut = "Boop!"
           break;
-        case (1):
+        case ("1"):
           messageOut = "Beep!"
           break;
         default: 

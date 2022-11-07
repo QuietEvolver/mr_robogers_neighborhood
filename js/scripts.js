@@ -1,8 +1,7 @@
 // Buisiness Logic 
 
-
-(function beepBoop(){
-  let input = [5, 1];
+function beepBoop(e, incoming){
+  let input = [incoming, 1]; // 5
   let inputValue = [];
   let message = "";
   for( let i = 0; i <= input[0]; i += input[1]){
@@ -30,8 +29,8 @@
       }
     }
   }  
-})();
-
+  // e.preventDefault();
+}
 
 // // fx any(){return Array.from(String(num), Number)};
 // (function numberNeighborhoodMessage(){
@@ -57,3 +56,21 @@
 //   return message;
 // }
 // })();
+
+function handleFormSubmission(e){
+  e.preventDefault();
+      
+  const input = document.getElementById("input-value-1").value;
+  let incoming = parseInt(input);
+  console.log("input & incmonig parse: ", input, incoming); 
+
+  beepBoop(e, incoming); 
+
+  // let output = document.getElementById("output").innerText = messageOut;
+  document.getElementById("output").removeAttribute("class", "hidden");
+  
+}
+
+window.addEventListener("load", function(){
+document.querySelector("form#intake-form").addEventListener("submit", handleFormSubmission);
+});
