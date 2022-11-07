@@ -73,13 +73,17 @@ const inputValue = parseInt(inputValue);
 inputValueNumber0(inputValue);
 Expected Output: "Beep?"
 
+
+Define beepBoop()
+
 Test: "It should return an array of numbers from 0 to the user's inputted number"
 Code: beepBoop(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-Test: "It should..." // this is the start of 2nd test for beepBoop()
-
-
+Test: "It should return 'Beep!' for a 1 input of the users array."
+Code: 
+beepBoop(1);
+Expected Output: "Beep?"
 
 ```
 
