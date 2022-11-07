@@ -11,11 +11,8 @@
 })();
 
 
-
 // fx any(){return Array.from(String(num), Number)};
-
-/* //   messageOut CHANGE FXnm: inputValueNumber0 to beepBoop: 
-(function inputValueNumber0(){
+(function numberNeighborhoodMessage(){
   let i  = "3";
 let message = "";
   let input = parseInt(i);
@@ -38,4 +35,3 @@ let message = "";
   return message;
 }
 })();
-// */

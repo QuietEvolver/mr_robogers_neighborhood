@@ -35,42 +35,42 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 ```
 ## Tests
 
-Describe: beepBoop()
+Describe: inputValueNumber0()
 
 Test: "It should return 1 if a passage has just one number input."
 Code:
-beepBoop(1);
+inputValueNumber0(1);
 Expected Output: 1
 
 Test: "It should return 'Outside' if a number is greater than 0-9 as a number input."
 Code:
-beepBoop(2022);
+inputValueNumber0(2022);
 Expected Output: "Outside?"
 
 Test: "It should return 'Outside?' for an input string."
 Code: 
-beepBoop("2022");
+inputValueNumber0("2022");
 Expected Output: "Outside?"
 
 Test: "It should return 2 for an input string turned integer."
 Code: 
 const input = "2";
 const inputValue = parseInt(inputValue);
-beepBoop(inputValue);
+inputValueNumber0(inputValue);
 Expected Output: 2
 
 Test: "It should return 'Outside?' for an input string turned integer."
 Code: 
 const input = "2022";
 const inputValue = parseInt(inputValue);
-beepBoop(inputValue);
+inputValueNumber0(inputValue);
 Expected Output: "Outside?"
 
 Test: "It should return 'Beep!' for an input split string, parsed integer."
 Code: 
 const input = "2022";
 const inputValue = parseInt(inputValue);
-beepBoop(inputValue);
+inputValueNumber0(inputValue);
 Expected Output: "Beep?"
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
