@@ -12,7 +12,7 @@ function beepBoop(e, incoming){
     //for (let input =0; input <inputValue[0].length; input++){
     inputValue.forEach(function(item, index) {
         document.getElementById("output").innerHTML = message;     
-      message += index + ": " + item + "<br>"; 
+      message += index + ": " + (item+1) + "<br>"; 
     } );
     // e.preventDefault();
 }
