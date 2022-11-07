@@ -3,34 +3,22 @@
 function beepBoop(e, incoming){
   let input = [incoming, 1]; // 5
   let inputValue = [];
-  let message = "";
+  let message = []; //"";
   for( let i = 0; i <= input[0]; i += input[1]){
     console.log(i);
     inputValue.push(i);
-    console.log("inputValue", inputValue);
-    for (let input =0; input <inputValue[0].length; input++){
-      if (1 === input) {
-        message = "Beep!";
-          console.log("CL: Beep!");
-        return message;
-      }
-      else if (2 === input){
-          console.log("Boop!: ", input);
-          message = "Boop!"
-        return message;
-      }
-      else if ( 3 === input){
-      message = "Won't you be my neighbor?"
-      return message;
-      } else {
-      message = "Outside?";
-          console.log("Outside?");
-      return message;
-      }
-    }
   }  
-  // e.preventDefault();
+    console.log("inputValue", inputValue);
+    //for (let input =0; input <inputValue[0].length; input++){
+    inputValue.forEach(function(item, index) {
+        document.getElementById("output").innerHTML = message;     
+      message += index + ": " + item + "<br>"; 
+    } );
+    // e.preventDefault();
 }
+
+
+
 
 // // fx any(){return Array.from(String(num), Number)};
 // (function numberNeighborhoodMessage(){
@@ -68,7 +56,7 @@ function handleFormSubmission(e){
 
   // let output = document.getElementById("output").innerText = messageOut;
   document.getElementById("output").removeAttribute("class", "hidden");
-  
+
 }
 
 window.addEventListener("load", function(){
