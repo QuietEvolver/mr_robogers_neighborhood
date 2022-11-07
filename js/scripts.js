@@ -5,13 +5,28 @@ function beepBoop(e, incoming){
   let inputValue = [];
   let message = []; //"";
   for( let i = 0; i <= input[0]; i += input[1]){
-    console.log(i);
+    console.log(i); 
+  //   if(inputValue[i].includes(3)){
+  // message.push("Won't you be my neighbor?");
+  // } else { 
+  //   message.push(inputValue.push(i))
+  // }
     inputValue.push(i);
-  }  
-    console.log("inputValue", inputValue);
+  } 
+  
+    console.log("inputValue", typeof inputValue);
+    for (const property in inputValue) {
+      console.log(`${property}: ${inputValue[property]}`);
+     if((`${property}: ${inputValue[property]}`)===3){
+    console.log("Wont you be my neighbor");
+     };
+    }
     //for (let input =0; input <inputValue[0].length; input++){
+
+
     inputValue.forEach(function(item, index) {
-        document.getElementById("output").innerHTML = message;     
+      document.getElementById("output").removeAttribute("class", "hidden");
+      document.getElementById("output").innerHTML = message;     
       message += index + ": " + (item+1) + "<br>"; 
     } );
     // e.preventDefault();
@@ -53,10 +68,6 @@ function handleFormSubmission(e){
   console.log("input & incmonig parse: ", input, incoming); 
 
   beepBoop(e, incoming); 
-
-  // let output = document.getElementById("output").innerText = messageOut;
-  document.getElementById("output").removeAttribute("class", "hidden");
-
 }
 
 window.addEventListener("load", function(){
