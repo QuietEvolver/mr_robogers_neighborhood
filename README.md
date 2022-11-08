@@ -38,7 +38,7 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
-Code: beepBoop(5);
+Code: beepBoop();
 Expected Output: [0, 1, 2, 3, 4, 5]
 
 ```
