@@ -35,55 +35,11 @@ For example, all digits of the number 39, 3, or 8763 would be replaced with "Won
 ```
 ## Tests
 
-Describe: inputValueNumber0()
-
-Test: "It should return 1 if a passage has just one number input."
-Code:
-inputValueNumber0(1);
-Expected Output: 1
-
-Test: "It should return 'Outside' if a number is greater than 0-9 as a number input."
-Code:
-inputValueNumber0(2022);
-Expected Output: "Outside?"
-
-Test: "It should return 'Outside?' for an input string."
-Code: 
-inputValueNumber0("2022");
-Expected Output: "Outside?"
-
-Test: "It should return 2 for an input string turned integer."
-Code: 
-const input = "2";
-const inputValue = parseInt(inputValue);
-inputValueNumber0(inputValue);
-Expected Output: 2
-
-Test: "It should return 'Outside?' for an input string turned integer."
-Code: 
-const input = "2022";
-const inputValue = parseInt(inputValue);
-inputValueNumber0(inputValue);
-Expected Output: "Outside?"
-
-Test: "It should return 'Beep!' for an input split string, parsed integer."
-Code: 
-const input = "2022";
-const inputValue = parseInt(inputValue);
-inputValueNumber0(inputValue);
-Expected Output: "Beep?"
-
-
-Define beepBoop()
+Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
 Code: beepBoop(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
-
-Test: "It should return 'Beep!' for a 1 input of the users array."
-Code: 
-beepBoop(1);
-Expected Output: "Beep?"
 
 ```
 
