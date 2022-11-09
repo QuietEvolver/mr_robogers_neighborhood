@@ -41,11 +41,16 @@ Test: "It should return an array of numbers from 0 to the user's inputted number
 Code: beepBoop();
 Expected Output: [0, 1, 2, 3, 4, 5]
 
-
 Test: "It should return 'Beep!' for a 1 input of the users array."
 Code: 
 beepBoop(1);
 Expected Output: "Beep?"
+
+Test: "It should return a separate branch for each loop with more than 2 integers for a 1 input of the users array."
+Code: 
+beepBoop(1);
+Expected Output: "Beep?"
+
 
 ```
 
