@@ -7,7 +7,6 @@ function beepBoop(input) {
   for (let i = 0; i <= input[0]; i += input[1]) { 
     countUpByIntake.push(i);
   }
-  let cubiSplitSTR = countUpByIntake.toString();
-  let cubiSplit = cubiSplitSTR.split(",");
+  let cubiSplit = countUpByIntake.toString().cubiSplitSTR.split(",");
   return cubiSplit;
 }
