@@ -8,7 +8,8 @@ function beepBoop(input) {
     countUpByIntake.push(i);
   }
   let cubiSplit = countUpByIntake.toString().split(" ");
-  let cubiTemp = [];
+  // let cubiTemp = [];
+  // console.log("cubiTemp: ", cubiTemp);
   let finalArr = [];
   console.log("cubiSplit: ", cubiSplit); 
   console.log("type of cubiSplit: ", typeof cubiSplit); 
@@ -16,6 +17,11 @@ function beepBoop(input) {
   console.log("cubiSplitStrMapToNumber: ", cubiSplitStrMapToNumber);
   let cubiStr = cubiSplitStrMapToNumber.toString(); 
   console.log("cubiStr: ", cubiStr);
+  Object.keys(cubiStr.forEach(key => {
+    if(key=!NaN && key===3){
+      finalArr.push("Won't you be my neighbor?");
+    }
+  }));
   // for ( let i = 0; i<=cubiSplitStrMapToNumber; i++){
   //   if(i=!NaN && i===3){
   //       finalArr.push("Won't you be my neighbor?");
@@ -27,8 +33,8 @@ function beepBoop(input) {
   //     console.log("i", i);
   //     console.log("finalArr", finalArr);
   // }
+ 
 }
-
 // UI Logic
 
 function handleFormSubmission(e){
