@@ -11,13 +11,20 @@ function beepBoop(input) {
   // let cubiTemp = [];
   // console.log("cubiTemp: ", cubiTemp);
   let finalArr = [];
+  console.log("finalArr: ", finalArr); 
   console.log("cubiSplit: ", cubiSplit); 
   console.log("type of cubiSplit: ", typeof cubiSplit); 
   let cubiSplitStrMapToNumber = [...String(cubiSplit)].map(Number);
   console.log("cubiSplitStrMapToNumber: ", cubiSplitStrMapToNumber);
   let cubiStr = cubiSplitStrMapToNumber.toString(); 
   console.log("cubiStr: ", cubiStr);
-
+  for (const cs of cubiStr) { 
+    if(cs==3){
+    console.log(`Hello ${cs}!`);
+    finalArr.push("WYBMN?");
+    }
+    finalArr.push(cs);
+  }
 
 
   // Obj.keys attmept:
