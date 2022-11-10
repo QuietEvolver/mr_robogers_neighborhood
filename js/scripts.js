@@ -5,50 +5,23 @@ function beepBoop(input) {
   let countUpByIntake = [];
   console.log("countUpByIntake ", countUpByIntake);
   for (let i = 0; i <= input; i++) { 
-    countUpByIntake.push(i);
-  }
-  let cubiSplit = countUpByIntake.toString().split(" ");
-  // let cubiTemp = [];
-  // console.log("cubiTemp: ", cubiTemp);
-  let finalArr = [];
-  console.log("finalArr: ", finalArr); 
-  console.log("cubiSplit: ", cubiSplit); 
-  console.log("type of cubiSplit: ", typeof cubiSplit); 
-  let cubiSplitStrMapToNumber = [...String(cubiSplit)].map(Number);
-  console.log("cubiSplitStrMapToNumber: ", cubiSplitStrMapToNumber);
-  let cubiStr = cubiSplitStrMapToNumber.toString(); 
-  console.log("cubiStr: ", cubiStr);
-  for (const cs of cubiStr) { 
-    if(cs==3){
-    console.log(`Hello ${cs}!`);
-    finalArr.push("WYBMN?");
+    console.log("i: ", i, i.toString(), i.toString().includes("1")  ); 
+    if (i.toString().includes("3")){
+      console.log("i3: ", i, i.toString(), i.toString().includes("3")  ); 
+      countUpByIntake.push("WYBMN?")
+    } else if (i.toString().includes("2")  ){
+      console.log("i2: ", i, i.toString(), i.toString().includes("2")  ); 
+      countUpByIntake.push("Boop!?")
+    } else if (i.toString().includes("1")  ){
+      console.log("i1: ", i, i.toString(), i.toString().includes("1")  ); 
+      countUpByIntake.push("Boop!?")
+    }  
+      else{ 
+      countUpByIntake.push(i);
     }
-    finalArr.push(cs);
   }
-
-
-  // Obj.keys attmept:
-  // Object.keys(cubiStr.forEach(key => { 
-  //   // QUES: Console logs: forEa not a fxn at cubuStr(obj) & cubiSplitStrMapToNumber(array)
-  //   if(key=!NaN && key==="3"){
-  //     finalArr.push("Won't you be my neighbor?");
-  //   }
-  // }));
-
-  // attempt:
-  // for ( let i = 0; i<=cubiSplitStrMapToNumber; i++){
-  //   if(i=!NaN && i===3){
-  //       finalArr.push("Won't you be my neighbor?");
-  //   } else if(i === 2){
-  //       finalArr.push("Boop!");
-  //   } else if(i=!NaN && i === "1"){
-  //       finalArr.push("Beep!");
-  //   } else ( finalArr.push(i) );
-  //     console.log("i", i);
-  //     console.log("finalArr", finalArr);
-  // }
- 
 }
+
 // UI Logic
 
 function handleFormSubmission(e){
