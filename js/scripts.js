@@ -17,11 +17,18 @@ function beepBoop(input) {
   console.log("cubiSplitStrMapToNumber: ", cubiSplitStrMapToNumber);
   let cubiStr = cubiSplitStrMapToNumber.toString(); 
   console.log("cubiStr: ", cubiStr);
-  Object.keys(cubiStr.forEach(key => {
-    if(key=!NaN && key===3){
-      finalArr.push("Won't you be my neighbor?");
-    }
-  }));
+
+
+
+  // Obj.keys attmept:
+  // Object.keys(cubiStr.forEach(key => { 
+  //   // QUES: Console logs: forEa not a fxn at cubuStr(obj) & cubiSplitStrMapToNumber(array)
+  //   if(key=!NaN && key==="3"){
+  //     finalArr.push("Won't you be my neighbor?");
+  //   }
+  // }));
+
+  // attempt:
   // for ( let i = 0; i<=cubiSplitStrMapToNumber; i++){
   //   if(i=!NaN && i===3){
   //       finalArr.push("Won't you be my neighbor?");
