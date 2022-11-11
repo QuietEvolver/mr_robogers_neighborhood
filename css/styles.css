@@ -1,6 +1,21 @@
 body {
   background-color: HSL(50, 50%, 88.2%);
+  justify-content: center;
 }
 h2 {
-  color: HSL(98, 10.4%, 69.8%)
+  color: aqua;
+  justify-content: center;
+}
+.hidden{
+  display: none;
+}
+img {
+  opacity: 0.5;
+}
+body {
+  background: url("https://thumbs.dreamstime.com/z/modern-android-robot-familiy-neighborhood-home-illustration-family-scene-you-can-mom-dad-their-young-boy-45111506.jpg") no-repeat;
+  background-size: cover;
+}
+span{
+  color: rgb(158, 214, 74);
 }
