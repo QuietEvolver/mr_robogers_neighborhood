@@ -24,7 +24,7 @@ function beepBoop(input) {
 function handleFormSubmission(e){
   e.preventDefault();
   document.querySelector('#output').innerText = null;
-  const input = parseInt(document.getElementById("input-value-1").value);
+  const input = parseFloat(document.getElementById("input-value-1").value);
   console.log("input: ", input); 
 
   let output = beepBoop(input);
